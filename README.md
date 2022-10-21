@@ -1,0 +1,2 @@
+# GSecurity
+Security script
