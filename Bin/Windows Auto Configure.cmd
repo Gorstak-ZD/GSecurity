@@ -79,7 +79,7 @@ echo == Show Hidden Files
 set Key="HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
 >nul 2>&1 REG ADD !key! /f /v Hidden /t REG_DWORD /d 1
 >nul 2>&1 REG ADD !key! /f /v SuperHidden /t REG_DWORD /d 1
->nul 2>&1 REG ADD !key! /f /v ShowSuperHidden /t REG_DWORD /d 1
+>nul 2>&1 REG ADD !key! /f /v ShowSuperHidden /t REG_DWORD /d 0
 
 echo == Disable MSDT URL protocol \
 echo    Troubleshooting Wizards
