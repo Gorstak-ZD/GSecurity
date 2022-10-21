@@ -376,6 +376,7 @@ Reg.exe import GSecurity.reg
 
 :: Batch Scripts
 call Default.cmd
+call RemoveServices.bat
 call "Windows Auto Configure.cmd"
 
 :: Exit
