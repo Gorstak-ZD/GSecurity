@@ -86,4 +86,3 @@ sc config WdiSystemHost start= disabled
 sc stop WdiSystemHost
 echo.
 
-pause
