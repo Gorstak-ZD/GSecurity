@@ -61,6 +61,14 @@ echo == Install Sandbox, Hyper-V
 >nul 2>&1 DISM /Online /Enable-Feature /All /Quiet /NoRestart /FeatureName:Microsoft-Hyper-V
 >nul 2>&1 DISM /Online /Enable-Feature /All /Quiet /NoRestart /FeatureName:Containers-DisposableClientVM
 
+echo == Take ownership of Desktop
+takeown /f "%SystemDrive%\Users\Public\Desktop" /r /d y
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
+takeown /f "%USERPROFILE%\Desktop" /r /d y
+icacls "%USERPROFILE%\Desktop" /inheritance:r
+icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
+
 echo == Restore F8 Legacy Boot
 >nul 2>&1 bcdedit /set {bootmgr} displaybootmenu yes
 >nul 2>&1 bcdedit /set {current} bootmenupolicy Legacy
