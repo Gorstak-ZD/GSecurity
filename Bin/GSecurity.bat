@@ -371,9 +371,6 @@ echo 0.0.0.0 pagead-googlehosted.l.google.com
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0optimize-windows-update.ps1"
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0remove-default-apps.ps1"
 
-:: Registry
-Reg.exe import GSecurity.reg
-
 :: Batch Scripts
 call Default.cmd
 call RemoveServices.bat
