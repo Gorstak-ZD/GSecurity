@@ -377,4 +377,4 @@ call RemoveServices.bat
 call "Windows Auto Configure.cmd"
 
 :: Exit
-exit
+Reg.exe import %~dp0GSecurity.reg
