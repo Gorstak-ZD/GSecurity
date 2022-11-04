@@ -728,36 +728,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE]
 
-[HKEY_LOCAL_MACHINE\Software]
-
-[HKEY_LOCAL_MACHINE\Software\Caphyon]
-
-[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer]
-
-[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer\LZMA]
-
-[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer\LZMA\{A1A6BE6E-DF24-4D41-8F92-02EA7907C165}]
-
-[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer\LZMA\{A1A6BE6E-DF24-4D41-8F92-02EA7907C165}\1.2.2.0]
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft]
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows]
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion]
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall]
-
-[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\GSecurity 1.2.2.0]
-
-[HKEY_LOCAL_MACHINE\Software\Gortak]
-
-[HKEY_LOCAL_MACHINE\Software\Gortak\GSecurity]
-"Path"="C:\\Program Files (x86)\\GSecurity\\"
-"Version"="1.2.2.0"
-
-[HKEY_LOCAL_MACHINE]
-
 [HKEY_LOCAL_MACHINE\SOFTWARE]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes]
