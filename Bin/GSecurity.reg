@@ -580,7 +580,7 @@ Windows Registry Editor Version 5.00
 "ShellFeedsTaskbarViewMode"=dword:00000002
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
-"AutoConfigURL"="https://raw.githubusercontent.com/gorstakzd79/Pac/main/proxy.pac"
+"AutoConfigURL"="https://raw.githubusercontent.com/gorstak-zd/Pac/main/proxy.pac"
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications]
 
@@ -750,9 +750,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\GSecurity 1.2.2.0]
 
-[HKEY_LOCAL_MACHINE\Software\Gorštak]
+[HKEY_LOCAL_MACHINE\Software\GorÂštak]
 
-[HKEY_LOCAL_MACHINE\Software\Gorštak\GSecurity]
+[HKEY_LOCAL_MACHINE\Software\GorÂštak\GSecurity]
 "Path"="C:\\Program Files (x86)\\GSecurity\\"
 "Version"="1.2.2.0"
 
