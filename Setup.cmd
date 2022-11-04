@@ -19,7 +19,6 @@ if %errorlevel% == 0 (
 ) 
 :start
 call %~dp0\Bin\GSecurity.bat
-Reg.exe import %~dp0\Bin\GSecurity.reg
 exit
 :IsAdmin
 @powershell.exe Start-Process %~f0 -verb runas
