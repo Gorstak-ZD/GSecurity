@@ -728,6 +728,36 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE]
 
+[HKEY_LOCAL_MACHINE\Software]
+
+[HKEY_LOCAL_MACHINE\Software\Caphyon]
+
+[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer]
+
+[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer\LZMA]
+
+[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer\LZMA\{A1A6BE6E-DF24-4D41-8F92-02EA7907C165}]
+
+[HKEY_LOCAL_MACHINE\Software\Caphyon\Advanced Installer\LZMA\{A1A6BE6E-DF24-4D41-8F92-02EA7907C165}\1.2.2.0]
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft]
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows]
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion]
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall]
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\GSecurity 1.2.2.0]
+
+[HKEY_LOCAL_MACHINE\Software\Gorštak]
+
+[HKEY_LOCAL_MACHINE\Software\Gorštak\GSecurity]
+"Path"="C:\\Program Files (x86)\\GSecurity\\"
+"Version"="1.2.2.0"
+
+[HKEY_LOCAL_MACHINE]
+
 [HKEY_LOCAL_MACHINE\SOFTWARE]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes]
@@ -976,6 +1006,14 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\FirewallRules]
+"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block tcp in except dhcp and port 55555|"
+"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block udp in except dhcp and port 55555|"
+"3"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=55556|Name=allow udp 55556|Desc=if you use P2P apps, use this port|"
+"4"="v2.31|Action=Block|Active=TRUE|Dir=Out|Name=Block all out except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
+"5"="v2.31|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\ftp.exe|Name=block ftp.exe|"
+"6"="v2.31|Action=Allow|Active=TRUE|Dir=Out|Name=allow console logon out|LUAuth=O:LSD:(A;;CC;;;S-1-2-1)|"
+"7"="v2.31|Action=Block|Active=TRUE|Dir=In|Name=block all in except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
+"8"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=6|LPort=55555|Name=allow tcp 55555|Desc=if you use torrent client, use this port|"
 "RemoteDesktop-Shadow-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|App=%SystemRoot%\\system32\\RdpSa.exe|Name=@FirewallAPI.dll,-28778|Desc=@FirewallAPI.dll,-28779|EmbedCtxt=@FirewallAPI.dll,-28752|Edge=TRUE|Defer=App|"
 "RemoteDesktop-UserMode-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28775|Desc=@FirewallAPI.dll,-28756|EmbedCtxt=@FirewallAPI.dll,-28752|"
 "RemoteDesktop-UserMode-In-UDP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28776|Desc=@FirewallAPI.dll,-28777|EmbedCtxt=@FirewallAPI.dll,-28752|"
@@ -1925,6 +1963,14 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules]
+"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block tcp in except dhcp and port 55555|"
+"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block udp in except dhcp and port 55555|"
+"3"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=55556|Name=allow udp 55556|Desc=if you use P2P apps, use this port|"
+"4"="v2.31|Action=Block|Active=TRUE|Dir=Out|Name=Block all out except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
+"5"="v2.31|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\ftp.exe|Name=block ftp.exe|"
+"6"="v2.31|Action=Allow|Active=TRUE|Dir=Out|Name=allow console logon out|LUAuth=O:LSD:(A;;CC;;;S-1-2-1)|"
+"7"="v2.31|Action=Block|Active=TRUE|Dir=In|Name=block all in except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
+"8"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=6|LPort=55555|Name=allow tcp 55555|Desc=if you use torrent client, use this port|"
 "CoreNet-DHCP-In"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=68|RPort=67|App=%SystemRoot%\\system32\\svchost.exe|Svc=dhcp|Name=@FirewallAPI.dll,-25301|Desc=@FirewallAPI.dll,-25303|EmbedCtxt=@FirewallAPI.dll,-25000|"
 "RemoteDesktop-Shadow-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|App=%SystemRoot%\\system32\\RdpSa.exe|Name=@FirewallAPI.dll,-28778|Desc=@FirewallAPI.dll,-28779|EmbedCtxt=@FirewallAPI.dll,-28752|Edge=TRUE|Defer=App|"
 "RemoteDesktop-UserMode-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28775|Desc=@FirewallAPI.dll,-28756|EmbedCtxt=@FirewallAPI.dll,-28752|"
