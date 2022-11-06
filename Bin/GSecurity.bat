@@ -12,6 +12,37 @@ lgpo.exe /s GSecurity.inf
 rd /s /q %ProgramData%\Microsoft\Provisioning
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Uninstall-ProvisioningPackage -AllInstalledPackages"
 
+:: Remote Shell
+Reg.exe add "HKLM\software\policies\microsoft\Windows\WinRM\Service\WinRS" /v "AllowRemoteShellAccess" /t REG_DWORD /d "0" /f
+
+:: Terminal Services
+Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\windows nt\terminal services" /v "fDenyTSConnections" /t REG_DWORD /d "1" /f
+Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\windows nt\terminal services" /v "DenyTSConnections" /t REG_DWORD /d "1" /f
+
+:: Remove Pester
+takeown /f "%ProgramFiles%\WindowsPowerShell" /r /d y
+icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:r /grant:r %username%:(OI)(CI)F /t /l /q /c
+rd "%ProgramFiles%\WindowsPowerShell" /s /q
+takeown /f "%ProgramFiles(x86)%\WindowsPowerShell" /r /d y
+icacls "%ProgramFiles(x86)%\WindowsPowerShell" /grant:r %username%:(OI)(CI)F /t /l /q /c
+rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
+
+:: Block logons
+takeown /f %SystemDrive%\Windows\System32\winlogon.exe
+icacls %SystemDrive%\Windows\System32\winlogon.exe /remove "All Application Packages"
+icacls %SystemDrive%\Windows\System32\winlogon.exe /remove "All Restricted Application Packages"
+icacls %SystemDrive%\Windows\System32\winlogon.exe /remove "Authenticated Users"
+icacls %SystemDrive%\Windows\System32\winlogon.exe /remove Users
+icacls %SystemDrive%\Windows\System32\winlogon.exe /remove TrustedInstaller
+icacls %SystemDrive%\Windows\System32\winlogon.exe /deny Network:F
+takeown /f %SystemDrive%\Windows\System32\logonui.exe
+icacls %SystemDrive%\Windows\System32\logonui.exe /remove "All Application Packages"
+icacls %SystemDrive%\Windows\System32\logonui.exe /remove "All Restricted Application Packages"
+icacls %SystemDrive%\Windows\System32\logonui.exe /remove "Authenticated Users"
+icacls %SystemDrive%\Windows\System32\logonui.exe /remove Users
+icacls %SystemDrive%\Windows\System32\logonui.exe /remove TrustedInstaller
+icacls %SystemDrive%\Windows\System32\logonui.exe /deny Network:F
+
 :: Disable spying on users and causing mental issues to users
 sc stop LanmanWorkstation
 sc stop LanmanServer
