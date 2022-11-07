@@ -1301,8 +1301,8 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\FirewallRules]
-"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block tcp in except dhcp and port 55555|"
-"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block udp in except dhcp and port 55555|"
+"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block tcp in except dhcp and port 55555|"
+"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block udp in except dhcp and port 55555|"
 "3"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=55556|Name=allow udp 55556|Desc=if you use P2P apps, use this port|"
 "4"="v2.31|Action=Block|Active=TRUE|Dir=Out|Name=Block all out except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
 "5"="v2.31|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\ftp.exe|Name=block ftp.exe|"
@@ -2258,8 +2258,8 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules]
-"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block tcp in except dhcp and port 55555|"
-"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55556-65535|Name=block udp in except dhcp and port 55555|"
+"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block tcp in except dhcp and port 55555|"
+"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block udp in except dhcp and port 55555|"
 "3"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=55556|Name=allow udp 55556|Desc=if you use P2P apps, use this port|"
 "4"="v2.31|Action=Block|Active=TRUE|Dir=Out|Name=Block all out except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
 "5"="v2.31|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\ftp.exe|Name=block ftp.exe|"
