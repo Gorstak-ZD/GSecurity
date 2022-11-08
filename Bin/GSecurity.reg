@@ -1,7 +1,5 @@
 Windows Registry Editor Version 5.00
 
-; Microsoft community discord tweaks
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet]
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
@@ -798,9 +796,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\GSecurity 1.2.4.0]
 
-[HKEY_LOCAL_MACHINE\Software\Gorštak]
+[HKEY_LOCAL_MACHINE\Software\GorÂštak]
 
-[HKEY_LOCAL_MACHINE\Software\Gorštak\GSecurity]
+[HKEY_LOCAL_MACHINE\Software\GorÂštak\GSecurity]
 "Path"="C:\\Program Files (x86)\\GSecurity\\"
 "Version"="1.2.4.0"
 
