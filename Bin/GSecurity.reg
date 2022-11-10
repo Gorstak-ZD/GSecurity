@@ -787,9 +787,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\GSecurity 1.2.6.1]
 
-[HKEY_LOCAL_MACHINE\Software\Gorštak]
+[HKEY_LOCAL_MACHINE\Software\Gor tak]
 
-[HKEY_LOCAL_MACHINE\Software\Gorštak\GSecurity]
+[HKEY_LOCAL_MACHINE\Software\Gor tak\GSecurity]
 "Path"="C:\\Program Files (x86)\\GSecurity\\"
 "Version"="1.2.6.1"
 
@@ -1353,14 +1353,29 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\FirewallRules]
-"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block tcp in except dhcp and port 55555|"
-"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block udp in except dhcp and port 55555|"
+"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block tcp in except dhcp and port 55555-6|"
+"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block udp in except dhcp and port 55555-6|"
 "3"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=55556|Name=allow udp 55556|Desc=if you use P2P apps, use this port|"
 "4"="v2.31|Action=Block|Active=TRUE|Dir=Out|Name=Block all out except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
 "5"="v2.31|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\ftp.exe|Name=block ftp.exe|"
 "6"="v2.31|Action=Allow|Active=TRUE|Dir=Out|Name=allow console logon out|LUAuth=O:LSD:(A;;CC;;;S-1-2-1)|"
 "7"="v2.31|Action=Block|Active=TRUE|Dir=In|Name=block all in except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
 "8"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=6|LPort=55555|Name=allow tcp 55555|Desc=if you use torrent client, use this port|"
+"9"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=wpnservice|Name=Block wpnservice|"
+"10"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=lsass|Name=lsass|"
+"11"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=system|Name=system|"
+"12"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=services|Name=services|"
+"13"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=spooler|Name=spooler|"
+"14"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=rpcss|Name=rpcss|"
+"15"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=schedule|Name=schedule|"
+"16"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=dnscache|Name=dnscache|"
+"17"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=eventlog|Name=eventlog|"
+"18"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=cdpsvc|Name=cdpsvc|"
+"19"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=wininit|Name=wininit|"
+"20"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=dnscache|Name=dnscache|"
+"21"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=cdpsvc|Name=cdpsvc|"
+"22"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=ssdpsrv|Name=ssdpsrv|"
+"CoreNet-DHCP-In"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=68|RPort=67|App=%SystemRoot%\\system32\\svchost.exe|Svc=dhcp|Name=@FirewallAPI.dll,-25301|Desc=@FirewallAPI.dll,-25303|EmbedCtxt=@FirewallAPI.dll,-25000|"
 "RemoteDesktop-Shadow-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|App=%SystemRoot%\\system32\\RdpSa.exe|Name=@FirewallAPI.dll,-28778|Desc=@FirewallAPI.dll,-28779|EmbedCtxt=@FirewallAPI.dll,-28752|Edge=TRUE|Defer=App|"
 "RemoteDesktop-UserMode-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28775|Desc=@FirewallAPI.dll,-28756|EmbedCtxt=@FirewallAPI.dll,-28752|"
 "RemoteDesktop-UserMode-In-UDP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28776|Desc=@FirewallAPI.dll,-28777|EmbedCtxt=@FirewallAPI.dll,-28752|"
@@ -1846,6 +1861,15 @@ Windows Registry Editor Version 5.00
 "PolicyScope"=dword:00000000
 "TransparentEnabled"=dword:00000001
 "authenticodeenabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{a5f78d63-bac4-49e9-92af-2cac820f5ae7}]
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"="*msedgewebview2.exe"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\262144]
 
@@ -2339,14 +2363,28 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules]
-"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block tcp in except dhcp and port 55555|"
-"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block udp in except dhcp and port 55555|"
+"1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block tcp in except dhcp and port 55555-6|"
+"2"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block udp in except dhcp and port 55555-6|"
 "3"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=55556|Name=allow udp 55556|Desc=if you use P2P apps, use this port|"
 "4"="v2.31|Action=Block|Active=TRUE|Dir=Out|Name=Block all out except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
 "5"="v2.31|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\ftp.exe|Name=block ftp.exe|"
 "6"="v2.31|Action=Allow|Active=TRUE|Dir=Out|Name=allow console logon out|LUAuth=O:LSD:(A;;CC;;;S-1-2-1)|"
 "7"="v2.31|Action=Block|Active=TRUE|Dir=In|Name=block all in except console logon|LUAuth=O:LSD:(D;;CC;;;S-1-2-1)|"
 "8"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=6|LPort=55555|Name=allow tcp 55555|Desc=if you use torrent client, use this port|"
+"9"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=wpnservice|Name=Block wpnservice|"
+"10"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=lsass|Name=lsass|"
+"11"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=system|Name=system|"
+"12"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=services|Name=services|"
+"13"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=spooler|Name=spooler|"
+"14"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=rpcss|Name=rpcss|"
+"15"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=schedule|Name=schedule|"
+"16"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=dnscache|Name=dnscache|"
+"17"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=eventlog|Name=eventlog|"
+"18"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=cdpsvc|Name=cdpsvc|"
+"19"="v2.32|Action=Block|Active=TRUE|Dir=In|Svc=wininit|Name=wininit|"
+"20"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=dnscache|Name=dnscache|"
+"21"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=cdpsvc|Name=cdpsvc|"
+"22"="v2.32|Action=Block|Active=TRUE|Dir=Out|Svc=ssdpsrv|Name=ssdpsrv|"
 "CoreNet-DHCP-In"="v2.31|Action=Allow|Active=TRUE|Dir=In|Protocol=17|LPort=68|RPort=67|App=%SystemRoot%\\system32\\svchost.exe|Svc=dhcp|Name=@FirewallAPI.dll,-25301|Desc=@FirewallAPI.dll,-25303|EmbedCtxt=@FirewallAPI.dll,-25000|"
 "RemoteDesktop-Shadow-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|App=%SystemRoot%\\system32\\RdpSa.exe|Name=@FirewallAPI.dll,-28778|Desc=@FirewallAPI.dll,-28779|EmbedCtxt=@FirewallAPI.dll,-28752|Edge=TRUE|Defer=App|"
 "RemoteDesktop-UserMode-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28775|Desc=@FirewallAPI.dll,-28756|EmbedCtxt=@FirewallAPI.dll,-28752|"
