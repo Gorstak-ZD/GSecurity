@@ -43,6 +43,29 @@ icacls %SystemDrive%\Windows\System32\logonui.exe /remove Users
 icacls %SystemDrive%\Windows\System32\logonui.exe /remove TrustedInstaller
 icacls %SystemDrive%\Windows\System32\logonui.exe /deny Network:F
 
+:: Block hooks
+echo == Block hooks
+takeown /f %SystemDrive%\Windows\System32\ntdll.dll /r /d y
+icacls %SystemDrive%\Windows\System32\ntdll.dll /inheritance:r
+icacls %SystemDrive%\Windows\System32\ntdll.dll /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
+icacls %SystemDrive%\Windows\System32\ntdll.dll /remove "All Application Packages"
+icacls %SystemDrive%\Windows\System32\ntdll.dll /remove "All Restricted Application Packages"
+icacls %SystemDrive%\Windows\System32\ntdll.dll /remove "Authenticated Users"
+icacls %SystemDrive%\Windows\System32\ntdll.dll /remove Users
+icacls %SystemDrive%\Windows\System32\ntdll.dll /remove TrustedInstaller
+icacls %SystemDrive%\Windows\System32\ntdll.dll /remove System
+icacls %SystemDrive%\Windows\System32\ntdll.dll /deny Network:F
+takeown /f %SystemDrive%\Windows\SysWOW64\kernel32.dll /r /d y
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /inheritance:r
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /remove "All Application Packages"
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /remove "All Restricted Application Packages"
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /remove "Authenticated Users"
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /remove Users
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /remove TrustedInstaller
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /remove System
+icacls %SystemDrive%\Windows\SysWOW64\kernel32.dll /deny Network:F
+
 :: Disable spying on users and causing mental issues to users
 sc stop LanmanWorkstation
 sc stop LanmanServer
