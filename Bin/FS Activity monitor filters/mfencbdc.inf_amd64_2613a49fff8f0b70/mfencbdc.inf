@@ -1,0 +1,75 @@
+; Copyright (C) McAfee LLC, 2021. All rights reserved.
+
+[Version]
+Signature = "$Windows NT$"
+Class = "ActivityMonitor"
+ClassGUID = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+; Refer to driver file (mfencbdc.sys) version resources for accurate version info.
+DriverVer = 01/01/2021, 1.0.0.0
+Provider = McAfee LLC.
+CatalogFile = mfencbdc.cat
+
+;;;;;;;;;;;;;;;;;;;;;;INSTALL;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[DefaultInstall]
+OptionDesc          	= %ServiceDescription%
+CopyFiles 		= MfeFiles
+
+[DefaultInstall.NTamd64]
+OptionDesc          	= %ServiceDescription%
+CopyFiles 		= MfeFiles
+
+[DefaultInstall.Services]
+AddService          = %ServiceName%,,MfeService
+
+[DefaultInstall.NTamd64.Services]
+AddService          = %ServiceName%,,MfeService
+
+;;;;;;;;;;;;;;;;;;;;;;UNINSTALL;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[DefaultUninstall]
+DelFiles	= MfeDelFiles
+
+[DefaultUninstall.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deletin
+
+[DefaultUninstall.NTamd64]
+DelFiles   = MfeDelFiles
+
+[DefaultUninstall.NTamd64.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deletin
+
+;;;;;;;;;;;;;;;;;;;;;;service;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[MfeService]
+DisplayName     = McAfee LLC. %ServiceName%
+Description     = %ServiceDescription%
+ServiceBinary   = %12%\%SysFileName%           	;%windir%\system32\drivers\
+ServiceType     = 1                            	;SERVICE_FILE_SYSTEM_DRIVER
+StartType       = 3                            	;SERVICE_DEMAND_START
+ErrorControl   	= 1                            	;SERVICE_ERROR_NORMAL
+
+  
+;;;;;;;;;;;;;;;;;;;;;;FILES;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[SourceDisksNames]
+1 = %SourceDiskName%
+
+[SourceDisksFiles]
+mfencbdc.sys = 1
+
+[DestinationDirs]
+MfeFiles = 12
+MfeDelFiles = 12
+
+[MfeFiles]
+mfencbdc.sys,,0x24
+
+[MfeDelFiles]
+mfencbdc.sys
+
+[Strings]
+ServiceName		= "mfencbdc"
+SysFileName		= "mfencbdc.sys"
+ServiceDescription	= "McAfee Content driver Copyright (C) McAfee LLC, 2021. All rights reserved."
+SourceDiskName 		= "McAfee Installation Files"
