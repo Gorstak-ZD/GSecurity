@@ -2,6 +2,11 @@ Windows Registry Editor Version 5.00
 
 ; GSecurity
 
+; PAC
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+"AutoConfigURL"="https://raw.githubusercontent.com/Gorstak-ZD/Pac/main/proxy.pac"
+
 ; Wise care 365
 
 [HKEY_CURRENT_USER\Control Panel\Desktop]
