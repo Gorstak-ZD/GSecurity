@@ -44,6 +44,7 @@ icacls a: /remove "Authenticated Users"
 icacls a: /grant:r "Administrators":(OI)(CI)F
 icacls a: /grant:r "System":(OI)(CI)F
 icacls a: /remove "Everyone"
+icacls a: /remove "Users"
 icacls a: /grant:r "%username%":(OI)(CI)F
 
 takeown /f b:
@@ -51,6 +52,7 @@ icacls b: /remove "Authenticated Users"
 icacls b: /grant:r "Administrators":(OI)(CI)F
 icacls b: /grant:r "System":(OI)(CI)F
 icacls b: /remove "Everyone"
+icacls b: /remove "Users"
 icacls b: /grant:r "%username%":(OI)(CI)F
 
 takeown /f c:
@@ -58,6 +60,7 @@ icacls c: /remove "Authenticated Users"
 icacls c: /grant:r "Administrators":(OI)(CI)F
 icacls c: /grant:r "System":(OI)(CI)F
 icacls c: /remove "Everyone"
+icacls c: /remove "Users"
 icacls c: /deny "Network":(OI)(CI)F
 icacls c: /grant:r "%username%":(OI)(CI)F
 
@@ -66,6 +69,7 @@ icacls d: /remove "Authenticated Users"
 icacls d: /grant:r "Administrators":(OI)(CI)F
 icacls d: /grant:r "System":(OI)(CI)F
 icacls d: /remove "Everyone"
+icacls d: /remove "Users"
 icacls d: /grant:r "%username%":(OI)(CI)F
 
 takeown /f e:
@@ -73,6 +77,7 @@ icacls e: /remove "Authenticated Users"
 icacls e: /grant:r "Administrators":(OI)(CI)F
 icacls e: /grant:r "System":(OI)(CI)F
 icacls e: /remove "Everyone"
+icacls e: /remove "Users"
 icacls e: /grant:r "%username%":(OI)(CI)F
 
 takeown /f f:
@@ -80,6 +85,7 @@ icacls f: /remove "Authenticated Users"
 icacls f: /grant:r "Administrators":(OI)(CI)F
 icacls f: /grant:r "System":(OI)(CI)F
 icacls f: /remove "Everyone"
+icacls f: /remove "Users"
 icacls f: /grant:r "%username%":(OI)(CI)F
 
 takeown /f g:
@@ -87,6 +93,7 @@ icacls g: /remove "Authenticated Users"
 icacls g: /grant:r "Administrators":(OI)(CI)F
 icacls g: /grant:r "System":(OI)(CI)F
 icacls g: /remove "Everyone"
+icacls g: /remove "Users"
 icacls g: /grant:r "%username%":(OI)(CI)F
 
 takeown /f h:
@@ -94,6 +101,7 @@ icacls h: /remove "Authenticated Users"
 icacls h: /grant:r "Administrators":(OI)(CI)F
 icacls h: /grant:r "System":(OI)(CI)F
 icacls h: /remove "Everyone"
+icacls h: /remove "Users"
 icacls h: /grant:r "%username%":(OI)(CI)F
 
 takeown /f i:
@@ -101,6 +109,7 @@ icacls i: /remove "Authenticated Users"
 icacls i: /grant:r "Administrators":(OI)(CI)F
 icacls i: /grant:r "System":(OI)(CI)F
 icacls i: /remove "Everyone"
+icacls i: /remove "Users"
 icacls i: /grant:r "%username%":(OI)(CI)F
 
 takeown /f j:
@@ -108,6 +117,7 @@ icacls j: /remove "Authenticated Users"
 icacls j: /grant:r "Administrators":(OI)(CI)F
 icacls j: /grant:r "System":(OI)(CI)F
 icacls j: /remove "Everyone"
+icacls j: /remove "Users"
 icacls j: /grant:r "%username%":(OI)(CI)F
 
 takeown /f k:
@@ -115,6 +125,7 @@ icacls k: /remove "Authenticated Users"
 icacls k: /grant:r "Administrators":(OI)(CI)F
 icacls k: /grant:r "System":(OI)(CI)F
 icacls k: /remove "Everyone"
+icacls k: /remove "Users"
 icacls k: /grant:r "%username%":(OI)(CI)F
 
 takeown /f l:
@@ -122,6 +133,7 @@ icacls l: /remove "Authenticated Users"
 icacls l: /grant:r "Administrators":(OI)(CI)F
 icacls l: /grant:r "System":(OI)(CI)F
 icacls l: /remove "Everyone"
+icacls l: /remove "Users"
 icacls l: /grant:r "%username%":(OI)(CI)F
 
 takeown /f m:
@@ -129,6 +141,7 @@ icacls m: /remove "Authenticated Users"
 icacls m: /grant:r "Administrators":(OI)(CI)F
 icacls m: /grant:r "System":(OI)(CI)F
 icacls m: /remove "Everyone"
+icacls m: /remove "Users"
 icacls m: /grant:r "%username%":(OI)(CI)F
 
 takeown /f n:
@@ -136,6 +149,7 @@ icacls n: /remove "Authenticated Users"
 icacls n: /grant:r "Administrators":(OI)(CI)F
 icacls n: /grant:r "System":(OI)(CI)F
 icacls n: /remove "Everyone"
+icacls n: /remove "Users"
 icacls n: /grant:r "%username%":(OI)(CI)F
 
 takeown /f o:
@@ -143,6 +157,7 @@ icacls o: /remove "Authenticated Users"
 icacls o: /grant:r "Administrators":(OI)(CI)F
 icacls o: /grant:r "System":(OI)(CI)F
 icacls o: /remove "Everyone"
+icacls o: /remove "Users"
 icacls o: /grant:r "%username%":(OI)(CI)F
 
 takeown /f p:
@@ -150,6 +165,7 @@ icacls p: /remove "Authenticated Users"
 icacls p: /grant:r "Administrators":(OI)(CI)F
 icacls p: /grant:r "System":(OI)(CI)F
 icacls p: /remove "Everyone"
+icacls p: /remove "Users"
 icacls p: /grant:r "%username%":(OI)(CI)F
 
 takeown /f q:
@@ -157,6 +173,7 @@ icacls q: /remove "Authenticated Users"
 icacls q: /grant:r "Administrators":(OI)(CI)F
 icacls q: /grant:r "System":(OI)(CI)F
 icacls q: /remove "Everyone"
+icacls q: /remove "Users"
 icacls q: /grant:r "%username%":(OI)(CI)F
 
 takeown /f r:
@@ -164,6 +181,7 @@ icacls r: /remove "Authenticated Users"
 icacls r: /grant:r "Administrators":(OI)(CI)F
 icacls r: /grant:r "System":(OI)(CI)F
 icacls r: /remove "Everyone"
+icacls r: /remove "Users"
 icacls r: /grant:r "%username%":(OI)(CI)F
 
 takeown /f s:
@@ -171,6 +189,7 @@ icacls s: /remove "Authenticated Users"
 icacls s: /grant:r "Administrators":(OI)(CI)F
 icacls s: /grant:r "System":(OI)(CI)F
 icacls s: /remove "Everyone"
+icacls s: /remove "Users"
 icacls s: /grant:r "%username%":(OI)(CI)F
 
 takeown /f t:
@@ -178,6 +197,7 @@ icacls t: /remove "Authenticated Users"
 icacls t: /grant:r "Administrators":(OI)(CI)F
 icacls t: /grant:r "System":(OI)(CI)F
 icacls t: /remove "Everyone"
+icacls t: /remove "Users"
 icacls t: /grant:r "%username%":(OI)(CI)F
 
 takeown /f u:
@@ -185,6 +205,7 @@ icacls u: /remove "Authenticated Users"
 icacls u: /grant:r "Administrators":(OI)(CI)F
 icacls u: /grant:r "System":(OI)(CI)F
 icacls u: /remove "Everyone"
+icacls u: /remove "Users"
 icacls u: /grant:r "%username%":(OI)(CI)F
 
 takeown /f v:
@@ -192,6 +213,7 @@ icacls v: /remove "Authenticated Users"
 icacls v: /grant:r "Administrators":(OI)(CI)F
 icacls v: /grant:r "System":(OI)(CI)F
 icacls v: /remove "Everyone"
+icacls v: /remove "Users"
 icacls v: /grant:r "%username%":(OI)(CI)F
 
 takeown /f w:
@@ -199,6 +221,7 @@ icacls w: /remove "Authenticated Users"
 icacls w: /grant:r "Administrators":(OI)(CI)F
 icacls w: /grant:r "System":(OI)(CI)F
 icacls w: /remove "Everyone"
+icacls w: /remove "Users"
 icacls w: /grant:r "%username%":(OI)(CI)F
 
 takeown /f x:
@@ -206,6 +229,7 @@ icacls x: /remove "Authenticated Users"
 icacls x: /grant:r "Administrators":(OI)(CI)F
 icacls x: /grant:r "System":(OI)(CI)F
 icacls x: /remove "Everyone"
+icacls x: /remove "Users"
 icacls x: /grant:r "%username%":(OI)(CI)F
 
 takeown /f y:
@@ -213,12 +237,14 @@ icacls y: /remove "Authenticated Users"
 icacls y: /grant:r "Administrators":(OI)(CI)F
 icacls y: /grant:r "System":(OI)(CI)F
 icacls y: /remove "Everyone"
+icacls y: /remove "Users"
 icacls y: /grant:r "%username%":(OI)(CI)F
 
 takeown /f z:
 icacls z: /remove "Authenticated Users"
 icacls z: /grant:r "Administrators":(OI)(CI)F
 icacls z: /grant:r "System":(OI)(CI)F
+icacls z: /remove "Users"
 icacls z: /remove "Everyone"
 icacls z: /grant:r "%username%":(OI)(CI)F
 
@@ -230,7 +256,7 @@ icacls "%USERPROFILE%\Desktop" /grant:r "%username%":(OI)(CI)F /t /l /q /c
 icacls "%USERPROFILE%\Desktop" /remove "Administrators"
 icacls "%USERPROFILE%\Desktop" /remove "System"
 icacls "%USERPROFILE%\Desktop" /remove "Authenticated Users"
-icacls "%USERPROFILE%\Desktop" 
+icacls "%USERPROFILE%\Desktop" /remove "Users"
 icacls "%USERPROFILE%\Desktop" /deny "Network":(OI)(CI)F /t /l /q /c
 
 :: Disable spying on users and causing mental issues to users
