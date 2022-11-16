@@ -60,7 +60,7 @@ icacls c: /remove "Authenticated Users"
 icacls c: /remove "Administrators"
 icacls c: /remove "Everyone"
 icacls c: /remove "Users"
-icacls c: /deny "Network":(OI)(CI)F
+icacls c: /deny "Network":F
 icacls c: /grant:r "%username%":(OI)(CI)F
 
 takeown /f d:
