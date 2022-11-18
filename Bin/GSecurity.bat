@@ -24,10 +24,10 @@ Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\windows nt\terminal services" /v "
 
 :: Remove Pester
 takeown /f "%ProgramFiles%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r Everyone:(OI)(CI)F /t /l /q /c
+icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r %username%:(OI)(CI)F /t /l /q /c
 rd "%ProgramFiles%\WindowsPowerShell" /s /q
 takeown /f "%ProgramFiles(x86)%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles(x86)%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r Everyone:(OI)(CI)F /t /l /q /c
+icacls "%ProgramFiles(x86)%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r %username%:(OI)(CI)F /t /l /q /c
 rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
 :: Perms
 C:
@@ -38,10 +38,10 @@ takeown /f %SystemDrive%\Windows\System32\logonui.exe /r /d y
 icacls %SystemDrive%\Windows\System32\logonui.exe /deny Network:(OI)(CI)F /t /l /q /c
 takeown /f "%USERPROFILE%\Desktop" /r /d y
 icacls "%USERPROFILE%\Desktop" /inheritance:r
-icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r Everyone:(OI)(CI)F /t /l /q /c
+icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
 icacls "%USERPROFILE%\Desktop" /deny Network:(OI)(CI)F /t /l /q /c
 icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
-icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r Everyone:(OI)(CI)F /t /l /q /c
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
 icacls "%SystemDrive%\Users\Public\Desktop" /deny Network:(OI)(CI)F /t /l /q /c
 a:
 takeown /f a:
