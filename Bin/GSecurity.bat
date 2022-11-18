@@ -26,10 +26,10 @@ Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\windows nt\terminal services" /v "
 C:\
 cd\
 takeown /f "%ProgramFiles%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles%\WindowsPowerShell" /grant:r %username%:(OI)(CI)F /t /l /q /c
+icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r %username%:(OI)(CI)F /t /l /q /c
 rd "%ProgramFiles%\WindowsPowerShell" /s /q
 takeown /f "%ProgramFiles(x86)%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles(x86)%\WindowsPowerShell" /grant:r %username%:(OI)(CI)F /t /l /q /c
+icacls "%ProgramFiles(x86)%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r %username%:(OI)(CI)F /t /l /q /c
 rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
 takeown /f %SystemDrive%\Windows\System32\winlogon.exe /r /d y
 icacls %SystemDrive%\Windows\System32\winlogon.exe /deny "Network":(OI)(CI)F /t /l /q /c
@@ -42,188 +42,211 @@ icacls "%USERPROFILE%\Desktop" /deny "Network":(OI)(CI)F /t /l /q /c
 icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
 icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r "%username%":(OI)(CI)F /t /l /q /c
 icacls "%SystemDrive%\Users\Public\Desktop" /deny "Network":(OI)(CI)F /t /l /q /c
+a:
 takeown /f a:
-icacls a: /remove "Authenticated "Users""
-icacls a: /remove "Administrators"
-icacls a: /remove "System"
-icacls a: /remove "Everyone"
-icacls a: /remove "Users"
-icacls a: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls a: /inheritance:d /remove "Authenticated "Users""
+icacls a: /inheritance:d /remove "Administrators"
+icacls a: /inheritance:d /remove "System"
+icacls a: /inheritance:d /remove "Everyone"
+icacls a: /inheritance:d /remove "Users"
+icacls a: /inheritance:d /grant:r %username%:(OI)(CI)F
+b:
 takeown /f b:
-icacls b: /remove "Authenticated "Users""
-icacls b: /remove "Administrators"
-icacls b: /remove "System"
-icacls b: /remove "Everyone"
-icacls b: /remove "Users"
-icacls b: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls b: /inheritance:d /remove "Authenticated "Users""
+icacls b: /inheritance:d /remove "Administrators"
+icacls b: /inheritance:d /remove "System"
+icacls b: /inheritance:d /remove "Everyone"
+icacls b: /inheritance:d /remove "Users"
+icacls b: /inheritance:d /grant:r %username%:(OI)(CI)F
+c:
 takeown /f c:
-icacls c: /remove "Authenticated "Users""
-icacls c: /remove "Administrators"
-icacls c: /remove "System"
-icacls c: /remove "Everyone"
-icacls c: /remove "Users"
-icacls c: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls c: /inheritance:d /remove "Authenticated "Users""
+icacls c: /inheritance:d /remove "Users"
+icacls c: /inheritance:d /grant:r %username%:(OI)(CI)F
+d:
 takeown /f d:
-icacls d: /remove "Authenticated "Users""
-icacls d: /remove "Administrators"
-icacls d: /remove "System"
-icacls d: /remove "Everyone"
-icacls d: /remove "Users"
-icacls d: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls d: /inheritance:d /remove "Authenticated "Users""
+icacls d: /inheritance:d /remove "Administrators"
+icacls d: /inheritance:d /remove "System"
+icacls d: /inheritance:d /remove "Everyone"
+icacls d: /inheritance:d /remove "Users"
+icacls d: /inheritance:d /grant:r %username%:(OI)(CI)F
+e:
 takeown /f e:
-icacls e: /remove "Authenticated "Users""
-icacls e: /remove "Administrators"
-icacls e: /remove "System"
-icacls e: /remove "Everyone"
-icacls e: /remove "Users"
-icacls e: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls e: /inheritance:d /remove "Authenticated "Users""
+icacls e: /inheritance:d /remove "Administrators"
+icacls e: /inheritance:d /remove "System"
+icacls e: /inheritance:d /remove "Everyone"
+icacls e: /inheritance:d /remove "Users"
+icacls e: /inheritance:d /grant:r %username%:(OI)(CI)F
+f:
 takeown /f f:
-icacls f: /remove "Authenticated "Users""
-icacls f: /remove "Administrators"
-icacls f: /remove "System"
-icacls f: /remove "Everyone"
-icacls f: /remove "Users"
-icacls f: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls f: /inheritance:d /remove "Authenticated "Users""
+icacls f: /inheritance:d /remove "Administrators"
+icacls f: /inheritance:d /remove "System"
+icacls f: /inheritance:d /remove "Everyone"
+icacls f: /inheritance:d /remove "Users"
+icacls f: /inheritance:d /grant:r %username%:(OI)(CI)F
+g:
 takeown /f g:
-icacls g: /remove "Authenticated "Users""
-icacls g: /remove "Administrators"
-icacls g: /remove "System"
-icacls g: /remove "Everyone"
-icacls g: /remove "Users"
-icacls g: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls g: /inheritance:d /remove "Authenticated "Users""
+icacls g: /inheritance:d /remove "Administrators"
+icacls g: /inheritance:d /remove "System"
+icacls g: /inheritance:d /remove "Everyone"
+icacls g: /inheritance:d /remove "Users"
+icacls g: /inheritance:d /grant:r %username%:(OI)(CI)F
+h:
 takeown /f h:
-icacls h: /remove "Authenticated "Users""
-icacls h: /remove "Administrators"
-icacls h: /remove "System"
-icacls h: /remove "Everyone"
-icacls h: /remove "Users"
-icacls h: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls h: /inheritance:d /remove "Authenticated "Users""
+icacls h: /inheritance:d /remove "Administrators"
+icacls h: /inheritance:d /remove "System"
+icacls h: /inheritance:d /remove "Everyone"
+icacls h: /inheritance:d /remove "Users"
+icacls h: /inheritance:d /grant:r %username%:(OI)(CI)F
+i:
 takeown /f i:
-icacls i: /remove "Authenticated "Users""
-icacls i: /remove "Administrators"
-icacls i: /remove "System"
-icacls i: /remove "Everyone"
-icacls i: /remove "Users"
-icacls i: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls i: /inheritance:d /remove "Authenticated "Users""
+icacls i: /inheritance:d /remove "Administrators"
+icacls i: /inheritance:d /remove "System"
+icacls i: /inheritance:d /remove "Everyone"
+icacls i: /inheritance:d /remove "Users"
+icacls i: /inheritance:d /grant:r %username%:(OI)(CI)F
+j:
 takeown /f j:
-icacls j: /remove "Authenticated "Users""
-icacls j: /remove "Administrators"
-icacls j: /remove "System"
-icacls j: /remove "Everyone"
-icacls j: /remove "Users"
-icacls j: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls j: /inheritance:d /remove "Authenticated "Users""
+icacls j: /inheritance:d /remove "Administrators"
+icacls j: /inheritance:d /remove "System"
+icacls j: /inheritance:d /remove "Everyone"
+icacls j: /inheritance:d /remove "Users"
+icacls j: /inheritance:d /grant:r %username%:(OI)(CI)F
+k:
 takeown /f k:
-icacls k: /remove "Authenticated "Users""
-icacls k: /remove "Administrators"
-icacls k: /remove "System"
-icacls k: /remove "Everyone"
-icacls k: /remove "Users"
-icacls k: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls k: /inheritance:d /remove "Authenticated "Users""
+icacls k: /inheritance:d /remove "Administrators"
+icacls k: /inheritance:d /remove "System"
+icacls k: /inheritance:d /remove "Everyone"
+icacls k: /inheritance:d /remove "Users"
+icacls k: /inheritance:d /grant:r %username%:(OI)(CI)F
+l:
 takeown /f l:
-icacls l: /remove "Authenticated "Users""
-icacls l: /remove "Administrators"
-icacls l: /remove "System"
-icacls l: /remove "Everyone"
-icacls l: /remove "Users"
-icacls l: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls l: /inheritance:d /remove "Authenticated "Users""
+icacls l: /inheritance:d /remove "Administrators"
+icacls l: /inheritance:d /remove "System"
+icacls l: /inheritance:d /remove "Everyone"
+icacls l: /inheritance:d /remove "Users"
+icacls l: /inheritance:d /grant:r %username%:(OI)(CI)F
+m:
 takeown /f m:
-icacls m: /remove "Authenticated "Users""
-icacls m: /remove "Administrators"
-icacls m: /remove "System"
-icacls m: /remove "Everyone"
-icacls m: /remove "Users"
-icacls m: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls m: /inheritance:d /remove "Authenticated "Users""
+icacls m: /inheritance:d /remove "Administrators"
+icacls m: /inheritance:d /remove "System"
+icacls m: /inheritance:d /remove "Everyone"
+icacls m: /inheritance:d /remove "Users"
+icacls m: /inheritance:d /grant:r %username%:(OI)(CI)F
+n:
 takeown /f n:
-icacls n: /remove "Authenticated "Users""
-icacls n: /remove "Administrators"
-icacls n: /remove "System"
-icacls n: /remove "Everyone"
-icacls n: /remove "Users"
-icacls n: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls n: /inheritance:d /remove "Authenticated "Users""
+icacls n: /inheritance:d /remove "Administrators"
+icacls n: /inheritance:d /remove "System"
+icacls n: /inheritance:d /remove "Everyone"
+icacls n: /inheritance:d /remove "Users"
+icacls n: /inheritance:d /grant:r %username%:(OI)(CI)F
+o:
 takeown /f o:
-icacls o: /remove "Authenticated "Users""
-icacls o: /remove "Administrators"
-icacls o: /remove "System"
-icacls o: /remove "Everyone"
-icacls o: /remove "Users"
-icacls o: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls o: /inheritance:d /remove "Authenticated "Users""
+icacls o: /inheritance:d /remove "Administrators"
+icacls o: /inheritance:d /remove "System"
+icacls o: /inheritance:d /remove "Everyone"
+icacls o: /inheritance:d /remove "Users"
+icacls o: /inheritance:d /grant:r %username%:(OI)(CI)F
+p:
 takeown /f p:
-icacls p: /remove "Authenticated "Users""
-icacls p: /remove "Administrators"
-icacls p: /remove "System"
-icacls p: /remove "Everyone"
-icacls p: /remove "Users"
-icacls p: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls p: /inheritance:d /remove "Authenticated "Users""
+icacls p: /inheritance:d /remove "Administrators"
+icacls p: /inheritance:d /remove "System"
+icacls p: /inheritance:d /remove "Everyone"
+icacls p: /inheritance:d /remove "Users"
+icacls p: /inheritance:d /grant:r %username%:(OI)(CI)F
+q:
 takeown /f q:
-icacls q: /remove "Authenticated "Users""
-icacls q: /remove "Administrators"
-icacls q: /remove "System"
-icacls q: /remove "Everyone"
-icacls q: /remove "Users"
-icacls q: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls q: /inheritance:d /remove "Authenticated "Users""
+icacls q: /inheritance:d /remove "Administrators"
+icacls q: /inheritance:d /remove "System"
+icacls q: /inheritance:d /remove "Everyone"
+icacls q: /inheritance:d /remove "Users"
+icacls q: /inheritance:d /grant:r %username%:(OI)(CI)F
+r:
 takeown /f r:
-icacls r: /remove "Authenticated "Users""
-icacls r: /remove "Administrators"
-icacls r: /remove "System"
-icacls r: /remove "Everyone"
-icacls r: /remove "Users"
-icacls r: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls r: /inheritance:d /remove "Authenticated "Users""
+icacls r: /inheritance:d /remove "Administrators"
+icacls r: /inheritance:d /remove "System"
+icacls r: /inheritance:d /remove "Everyone"
+icacls r: /inheritance:d /remove "Users"
+icacls r: /inheritance:d /grant:r %username%:(OI)(CI)F
+s:
 takeown /f s:
-icacls s: /remove "Authenticated "Users""
-icacls s: /remove "Administrators"
-icacls s: /remove "System"
-icacls s: /remove "Everyone"
-icacls s: /remove "Users"
-icacls s: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls s: /inheritance:d /remove "Authenticated "Users""
+icacls s: /inheritance:d /remove "Administrators"
+icacls s: /inheritance:d /remove "System"
+icacls s: /inheritance:d /remove "Everyone"
+icacls s: /inheritance:d /remove "Users"
+icacls s: /inheritance:d /grant:r %username%:(OI)(CI)F
+t:
 takeown /f t:
-icacls t: /remove "Authenticated "Users""
-icacls t: /remove "Administrators"
-icacls t: /remove "System"
-icacls t: /remove "Everyone"
-icacls t: /remove "Users"
-icacls t: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls t: /inheritance:d /remove "Authenticated "Users""
+icacls t: /inheritance:d /remove "Administrators"
+icacls t: /inheritance:d /remove "System"
+icacls t: /inheritance:d /remove "Everyone"
+icacls t: /inheritance:d /remove "Users"
+icacls t: /inheritance:d /grant:r %username%:(OI)(CI)F
+u:
 takeown /f u:
-icacls u: /remove "Authenticated "Users""
-icacls u: /remove "Administrators"
-icacls u: /remove "System"
-icacls u: /remove "Everyone"
-icacls u: /remove "Users"
-icacls u: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls u: /inheritance:d /remove "Authenticated "Users""
+icacls u: /inheritance:d /remove "Administrators"
+icacls u: /inheritance:d /remove "System"
+icacls u: /inheritance:d /remove "Everyone"
+icacls u: /inheritance:d /remove "Users"
+icacls u: /inheritance:d /grant:r %username%:(OI)(CI)F
+v:
 takeown /f v:
-icacls v: /remove "Authenticated "Users""
-icacls v: /remove "Administrators"
-icacls v: /remove "System"
-icacls v: /remove "Everyone"
-icacls v: /remove "Users"
-icacls v: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls v: /inheritance:d /remove "Authenticated "Users""
+icacls v: /inheritance:d /remove "Administrators"
+icacls v: /inheritance:d /remove "System"
+icacls v: /inheritance:d /remove "Everyone"
+icacls v: /inheritance:d /remove "Users"
+icacls v: /inheritance:d /grant:r %username%:(OI)(CI)F
+w:
 takeown /f w:
-icacls w: /remove "Authenticated "Users""
-icacls w: /remove "Administrators"
-icacls w: /remove "System"
-icacls w: /remove "Everyone"
-icacls w: /remove "Users"
-icacls w: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls w: /inheritance:d /remove "Authenticated "Users""
+icacls w: /inheritance:d /remove "Administrators"
+icacls w: /inheritance:d /remove "System"
+icacls w: /inheritance:d /remove "Everyone"
+icacls w: /inheritance:d /remove "Users"
+icacls w: /inheritance:d /grant:r %username%:(OI)(CI)F
+x:
 takeown /f x:
-icacls x: /remove "Authenticated "Users""
-icacls x: /remove "Administrators"
-icacls x: /remove "System"
-icacls x: /remove "Everyone"
-icacls x: /remove "Users"
-icacls x: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls x: /inheritance:d /remove "Authenticated "Users""
+icacls x: /inheritance:d /remove "Administrators"
+icacls x: /inheritance:d /remove "System"
+icacls x: /inheritance:d /remove "Everyone"
+icacls x: /inheritance:d /remove "Users"
+icacls x: /inheritance:d /grant:r %username%:(OI)(CI)F
+y:
 takeown /f y:
-icacls y: /remove "Authenticated "Users""
-icacls y: /remove "Administrators"
-icacls y: /remove "System"
-icacls y: /remove "Everyone"
-icacls y: /remove "Users"
-icacls y: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls y: /inheritance:d /remove "Authenticated "Users""
+icacls y: /inheritance:d /remove "Administrators"
+icacls y: /inheritance:d /remove "System"
+icacls y: /inheritance:d /remove "Everyone"
+icacls y: /inheritance:d /remove "Users"
+icacls y: /inheritance:d /grant:r %username%:(OI)(CI)F
+z:
 takeown /f z:
-icacls z: /remove "Authenticated "Users""
-icacls z: /remove "Administrators"
-icacls z: /remove "System"
-icacls z: /remove "Everyone"
-icacls z: /remove "Users"
-icacls z: /inheritance:e /grant:r %username%:(OI)(CI)F
+icacls z: /inheritance:d /remove "Authenticated "Users""
+icacls z: /inheritance:d /remove "Administrators"
+icacls z: /inheritance:d /remove "System"
+icacls z: /inheritance:d /remove "Everyone"
+icacls z: /inheritance:d /remove "Users"
+icacls z: /inheritance:d /grant:r %username%:(OI)(CI)F
 
 :: Disable spying on users and causing mental issues to users
 sc stop LanmanWorkstation
