@@ -39,7 +39,7 @@ icacls %SystemDrive%\Windows\System32\logonui.exe /deny Network:(OI)(CI)F /t /l 
 takeown /f "%USERPROFILE%\Desktop" /r /d y
 icacls "%USERPROFILE%\Desktop" /inheritance:r
 icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r Everyone:(OI)(CI)F /t /l /q /c
-icacls "%USERPROFILE%\Desktop" /deny "Network":(OI)(CI)F /t /l /q /c
+icacls "%USERPROFILE%\Desktop" /deny Network:(OI)(CI)F /t /l /q /c
 icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
 icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r Everyone:(OI)(CI)F /t /l /q /c
 icacls "%SystemDrive%\Users\Public\Desktop" /deny Network:(OI)(CI)F /t /l /q /c
