@@ -2,6 +2,21 @@ Windows Registry Editor Version 5.00
 
 ; GSecurity
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\Internet]
+"UseInternetPorts"="N"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole]
+"EnableDCOM"="N"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NetBT\Parameters]
+"SmbDeviceEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NetBT]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Messenger]
+"Start"=dword:00000004
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed]
@@ -553,9 +568,125 @@ Windows Registry Editor Version 5.00
   3a,89,b7,2d,59,e9,b0,a7,74,95,5d,12,a6,7d,25,9d,cc,aa,db,dc,03,3f,dd,09,c9,\
   7d,a7,13,a7,3a,a1
 
+; Sign
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableAutomaticRestartSignOn"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"StartMenuLogOff"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"StartMenuLogOff"=dword:00000001
+
+; Remote shell
+
+[HKEY_LOCAL_MACHINE\software\policies\microsoft\Windows\WinRM\Client]
+"AllowBasic"=dword:00000000
+"AllowDigest"=dword:00000000
+"AllowUnencryptedTraffic"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\software\policies\microsoft\Windows\WinRM\Service]
+"AllowBasic"=dword:00000000
+"AllowUnencryptedTraffic"=dword:00000000
+"DisableRunAs"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\software\policies\microsoft\Windows\WinRM\Service\WinRS]
+"AllowRemoteShellAccess"=dword:00000000
+
+; Terminal services
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\windows nt\terminal services]
+"fallowfullcontrol"=-
+"fallowunsolicitedfullcontrol"=-
+"fusemailto"=-
+"maxticketexpiry"=-
+"maxticketexpiryunits"=-
+"AllowSignedFiles"=dword:00000000
+"AllowUnsignedFiles"=dword:00000000
+"DisablePasswordSaving"=dword:00000001
+"fAllowToGetHelp"=dword:00000000
+"fAllowUnsolicited"=dword:00000000
+"fDenyTSConnections"=dword:00000001
+"fDisableCdm"=dword:00000001
+"fDisableCpm"=dword:00000001
+"fEncryptRPCTraffic"=dword:00000001
+"fPromptForPassword"=dword:00000001
+"MinEncryptionLevel"=dword:00000003
+"PromptForCredsOnClient"=dword:00000001
+"UseUniversalPrinterDriverFirst"=dword:00000004
+"fSingleSessionPerUser"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\software\policies\microsoft\windows nt\terminal services\client]
+"fusbredirectionenablemode"=-
+
+; Firewall
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall]
+"IPSecExempt"=dword:00000000
+"PolicyVersion"=dword:0000021f
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000001
+"AllowLocalIPsecPolicyMerge"=dword:00000001
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000001
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\Services\FileAndPrint]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\Services\RemoteDesktop]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000001
+"AllowLocalIPsecPolicyMerge"=dword:00000001
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000001
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\FileAndPrint]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\RemoteDesktop]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000001
+"AllowLocalIPsecPolicyMerge"=dword:00000001
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000001
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Services\FileAndPrint]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Services\RemoteDesktop]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000001
+"AllowLocalIPsecPolicyMerge"=dword:00000001
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000001
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Services\FileAndPrint]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Services\RemoteDesktop]
+"Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\FirewallRules]
 "1"="v2.31|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=0-66|LPort2_10=69-55554|LPort2_10=55557-65535|Name=block tcp in except dhcp and port 55555-6|"
@@ -963,7 +1094,7 @@ Windows Registry Editor Version 5.00
 "AllowLocalIPsecPolicyMerge"=dword:00000001
 "AllowLocalPolicyMerge"=dword:00000001
 "DefaultInboundAction"=dword:00000001
-"DefaultOutboundAction"=dword:00000000
+"DefaultOutboundAction"=dword:00000001
 "DisableNotifications"=dword:00000000
 "DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
 "EnableFirewall"=dword:00000001
@@ -1011,7 +1142,7 @@ Windows Registry Editor Version 5.00
 "AllowLocalIPsecPolicyMerge"=dword:00000001
 "AllowLocalPolicyMerge"=dword:00000001
 "DefaultInboundAction"=dword:00000001
-"DefaultOutboundAction"=dword:00000000
+"DefaultOutboundAction"=dword:00000001
 "DisableNotifications"=dword:00000000
 "DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
 "EnableFirewall"=dword:00000001
@@ -1031,7 +1162,7 @@ Windows Registry Editor Version 5.00
 "AllowLocalIPsecPolicyMerge"=dword:00000001
 "AllowLocalPolicyMerge"=dword:00000001
 "DefaultInboundAction"=dword:00000001
-"DefaultOutboundAction"=dword:00000000
+"DefaultOutboundAction"=dword:00000001
 "DisableNotifications"=dword:00000000
 "DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
 "EnableFirewall"=dword:00000001
@@ -1051,7 +1182,7 @@ Windows Registry Editor Version 5.00
 "AllowLocalIPsecPolicyMerge"=dword:00000001
 "AllowLocalPolicyMerge"=dword:00000001
 "DefaultInboundAction"=dword:00000001
-"DefaultOutboundAction"=dword:00000000
+"DefaultOutboundAction"=dword:00000001
 "DisableNotifications"=dword:00000000
 "DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
 "EnableFirewall"=dword:00000001
