@@ -2,6 +2,9 @@ Windows Registry Editor Version 5.00
 
 ; GSecurity
 
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+"AutoConfigURL"="https://raw.githubusercontent.com/Gorstak-ZD/Pac/main/proxy.pac"
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\Internet]
 "UseInternetPorts"="N"
 
