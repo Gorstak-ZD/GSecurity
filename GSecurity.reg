@@ -2,8 +2,12 @@ Windows Registry Editor Version 5.00
 
 ; GSecurity
 
+; Proxy PAC
+
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
 "AutoConfigURL"="https://raw.githubusercontent.com/Gorstak-ZD/Pac/main/proxy.pac"
+
+; Worms Doors Cleaner
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc\Internet]
 "UseInternetPorts"="N"
@@ -19,6 +23,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Messenger]
 "Start"=dword:00000004
+
+; Disallow Certificates
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates]
 
@@ -719,6 +725,8 @@ Windows Registry Editor Version 5.00
 "RemoteDesktop-UserMode-In-TCP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28775|Desc=@FirewallAPI.dll,-28756|EmbedCtxt=@FirewallAPI.dll,-28752|"
 "RemoteDesktop-UserMode-In-UDP"="v2.28|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28776|Desc=@FirewallAPI.dll,-28777|EmbedCtxt=@FirewallAPI.dll,-28752|"
 
+; General Tweaks
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
 "DisableSensors"=dword:00000001
 
@@ -753,6 +761,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin]
 @=""
+
+; Software Restriction Policies
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer]
 
@@ -1021,6 +1031,8 @@ Windows Registry Editor Version 5.00
 "LastModified"=hex(b):94,75,99,96,33,90,32,90,13,3
 "SaferFlags"=dword:00000000
 
+; Control
+
 [HKEY_LOCAL_MACHINE\SYSTEM]
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001]
@@ -1075,6 +1087,8 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener]
 "Start"=dword:00000000
+
+; Services
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services]
 
