@@ -646,6 +646,9 @@ Windows Registry Editor Version 5.00
 "DefaultOutboundAction"=dword:00000001
 "DefaultInboundAction"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\RemoteAdminSettings]
+"Enabled"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile\Services\FileAndPrint]
 "Enabled"=dword:00000000
 
@@ -660,6 +663,9 @@ Windows Registry Editor Version 5.00
 "EnableFirewall"=dword:00000001
 "DefaultOutboundAction"=dword:00000001
 "DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\RemoteAdminSettings]
+"Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile\Services\FileAndPrint]
 "Enabled"=dword:00000000
@@ -676,6 +682,9 @@ Windows Registry Editor Version 5.00
 "DefaultOutboundAction"=dword:00000001
 "DefaultInboundAction"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\RemoteAdminSettings]
+"Enabled"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile\Services\FileAndPrint]
 "Enabled"=dword:00000000
 
@@ -690,6 +699,9 @@ Windows Registry Editor Version 5.00
 "EnableFirewall"=dword:00000001
 "DefaultOutboundAction"=dword:00000001
 "DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\RemoteAdminSettings]
+"Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile\Services\FileAndPrint]
 "Enabled"=dword:00000000
