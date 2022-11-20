@@ -8,6 +8,9 @@ pushd %~dp0
 :: Install filters
 pnputil.exe /add-driver *.inf /subdirs /install
 
+:: Security policy
+lgpo /s GSecurity.inf 
+
 :: Provisioning
 rd /s /q %ProgramData%\Microsoft\Provisioning
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Uninstall-ProvisioningPackage -AllInstalledPackages"
