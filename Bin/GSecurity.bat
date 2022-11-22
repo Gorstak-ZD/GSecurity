@@ -19,14 +19,93 @@ rd /s /q %ProgramData%\Microsoft\Provisioning
 c:
 cd\
 takeown /f "%ProgramFiles%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r %username%:(OI)(CI)F /t /l /q /c
+icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:r
+icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
 rd "%ProgramFiles%\WindowsPowerShell" /s /q
 takeown /f "%ProgramFiles(x86)%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles(x86)%\WindowsPowerShell" /inheritance:e /inheritance:d /grant:r %username%:(OI)(CI)F /t /l /q /c
+icacls "%ProgramFiles(x86)%\WindowsPowerShell" /inheritance:r
+icacls "%ProgramFiles(x86)%\WindowsPowerShell" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
 rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
+
+:: Take ownership of Desktop
+takeown /f "%SystemDrive%\Users\Public\Desktop" /r /d y
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
+takeown /f "%USERPROFILE%\Desktop" /r /d y
+icacls "%USERPROFILE%\Desktop" /inheritance:r
+icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
 
 :: Pagefile
 wmic computersystem where name="%computername%" set AutomaticManagedPagefile=True
+
+:: Fix network
+reg add "HKLM\System\CurrentControlSet\Services\BFE" /v "Start" /t REG_DWORD /d "2" /f
+reg add "HKLM\System\CurrentControlSet\Services\Dnscache" /v "Start" /t REG_DWORD /d "2" /f
+reg add "HKLM\System\CurrentControlSet\Services\MpsSvc" /v "Start" /t REG_DWORD /d "2" /f
+reg add "HKLM\System\CurrentControlSet\Services\WinHttpAutoProxySvc" /v "Start" /t REG_DWORD /d "3" /f
+
+sc config Dhcp start= auto
+sc config DPS start= auto
+sc config lmhosts start= auto
+sc config NlaSvc start= auto
+sc config nsi start= auto
+sc config RmSvc start= auto
+sc config Wcmsvc start= auto
+sc config WdiServiceHost start= demand
+sc config Winmgmt start= auto
+
+sc config NcbService start= demand
+sc config ndu start= demand
+sc config Netman start= demand
+sc config netprofm start= demand
+sc config WlanSvc start= auto
+sc config WwanSvc start= demand
+
+net start DPS
+net start nsi
+net start NlaSvc
+net start Dhcp
+net start Wcmsvc
+net start RmSvc
+
+schtasks /Change /TN "Microsoft\Windows\DUSM\dusmtask" /Enable
+
+rem Disable adapter with index number 0-5 (most likely all), equals to ipconfig /release
+wmic path win32_networkadapter where index=0 call disable
+wmic path win32_networkadapter where index=1 call disable
+wmic path win32_networkadapter where index=2 call disable
+wmic path win32_networkadapter where index=3 call disable
+wmic path win32_networkadapter where index=4 call disable
+wmic path win32_networkadapter where index=5 call disable
+
+timeout 5
+
+rem Enable adapter with index number 0-5 (most likely all), equals to ipconfig /renew
+wmic path win32_networkadapter where index=0 call enable
+wmic path win32_networkadapter where index=1 call enable
+wmic path win32_networkadapter where index=2 call enable
+wmic path win32_networkadapter where index=3 call enable
+wmic path win32_networkadapter where index=4 call enable
+wmic path win32_networkadapter where index=5 call enable
+
+arp -d *
+route -f
+nbtstat -R
+nbtstat -RR
+netsh advfirewall reset
+
+netcfg -d
+netsh winsock reset
+netsh int 6to4 reset all
+netsh int httpstunnel reset all
+netsh int ip reset
+netsh int isatap reset all
+netsh int portproxy reset all
+netsh int tcp reset all
+netsh int teredo reset all
+netsh branchcache reset
+ipconfig /release
+ipconfig /renew
 
 :: Hosts
 (
