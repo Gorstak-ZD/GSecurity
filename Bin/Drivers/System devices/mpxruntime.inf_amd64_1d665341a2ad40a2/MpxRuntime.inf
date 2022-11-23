@@ -1,0 +1,110 @@
+; INTEL CONFIDENTIAL
+; Copyright 2009-2016 Intel Corporation All Rights Reserved.
+;
+; The source code contained or described herein and all documents related to the
+; source code ("Material") are owned by Intel Corporation or its suppliers or
+; licensors. Title to the Material remains with Intel Corporation or its
+; suppliers and licensors. The Material may contain trade secrets and proprietary
+; and confidential information of Intel Corporation and its suppliers and
+; licensors, and is protected by worldwide copyright and trade secret laws and
+; treaty provisions. No part of the Material may be used, copied, reproduced,
+; modified, published, uploaded, posted, transmitted, distributed, or disclosed
+; in any way without Intels prior express written permission.
+; No license under any patent, copyright, trade secret or other intellectual
+; property right is granted to or conferred upon you by disclosure or delivery
+; of the Materials, either expressly, by implication, inducement, estoppel or
+; otherwise. Any license under such intellectual property rights must be
+; express and approved by Intel in writing.
+;
+; Include any supplier copyright notices as supplier requires Intel to use.
+; Include supplier trademarks or logos as supplier requires Intel to use,
+; preceded by an asterisk.
+; An asterisked footnote can be added as follows: 
+;   *Third Party trademarks are the property of their respective owners.
+;
+; Unless otherwise agreed by Intel in writing, you may not remove or alter this
+; notice or any other notice embedded in Materials by Intel or Intels suppliers
+; or licensors in any way.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=MpxRuntime.cat
+DriverVer=01/27/2016,1.0.0.11
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+MpxRuntime.sys  = 1,,
+
+;*****************************************
+; Mpx Runtime Driver Install Section
+;*****************************************
+[DeviceInstall32]
+AddDevice = ROOT\MpxRuntime\0000,,MpxRuntime_RootDevice_Install
+
+[MpxRuntime_RootDevice_Install]
+HardwareIds = ROOT\MpxRuntime
+
+[Manufacturer]
+%StdMfg%=Standard,NTamd64.10.0
+
+; For XP and later
+[Standard.NTamd64.10.0]
+%MpxRuntime.DeviceDesc%=MpxRuntime, ROOT\MpxRuntime
+
+[MpxRuntime.NT]
+CopyFiles=Drivers_Dir
+
+;[MpxRuntime.NT.HW]
+;AddReg=MpxRuntime.NT.AddReg
+
+;[MpxRuntime.NT.AddReg]                            
+;HKR,,DeviceCharacteristics,0x10001,0x0100         ; Use same security checks on relative opens
+;HKLM,%MpxRuntime.RegPath%,%FeaturesValue%,0x10001,0x0000001F
+;HKLM,%MpxRuntime.RegPath%,%ThreadValue%,0x10001,0x00000010
+
+
+[Drivers_Dir]
+MpxRuntime.sys
+
+
+;-------------- Service installation
+[MpxRuntime.NT.Services]
+AddService = MpxRuntime,%SPSVCINST_ASSOCSERVICE%, MpxRuntime_Service_Inst
+
+; -------------- Mpx runtime driver install sections
+[MpxRuntime_Service_Inst]
+DisplayName    = %MpxRuntime.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START 
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\MpxRuntime.sys
+;LoadOrderGroup = Extended Base
+
+;
+;--- MpxRuntime Driver Coinstaller installation ------
+;
+
+[MpxRuntime.NT.Wdf]
+KmdfService =  MpxRuntime, MpxRuntime_wdfsect
+
+[MpxRuntime_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+INTEL = "Intel"
+StdMfg = "(Standard system devices)"
+DiskId1 = "Intel(R) MPX Runtime Driver Disk"
+MpxRuntime.DeviceDesc = "Intel(R) MPX Runtime Driver"
+MpxRuntime.SVCDESC = "Intel(R) MPX Runtime Driver"
+;MpxRuntime.RegPath = "SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\Extended State"
+FeaturesValue = "AllowedFeatures"
+ThreadValue = "ThreadPersistentFeatures"
