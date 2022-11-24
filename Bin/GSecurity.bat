@@ -436,13 +436,13 @@ echo 0.0.0.0 static.doubleclick.net
 echo 0.0.0.0 pagead-googlehosted.l.google.com
 )>"%systemdrive%\Windows\System32\Drivers\Etc\hosts"
 
+:: Registry
+Reg.exe import %~dp0GSecurity.reg
+
 :: GCleaner
 
 :: Active folder
 pushd %~dp0
-
-:: Registry
-Reg.exe import %~dp0GSecurity.reg
 
 :: Persistent cleaner
 copy /y EmptyStandbyList.exe %systemdrive%\users\Public\
