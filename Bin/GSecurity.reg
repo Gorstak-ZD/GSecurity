@@ -98,19 +98,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode\shell\004-SafeModeCommandPrompt\command]
 @="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,bcdedit /set {current} safeboot minimal & bcdedit /set {current} safebootalternateshell yes & shutdown -r -t 00 -f' -Verb runAs\""
 
-; Disable mitigations
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
-"FeatureSettings"=dword:00000000
-"FeatureSettingsOverrideMask"=dword:00000003
-"FeatureSettingsOverride"=dword:00000003
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel]
-"DisableTsx"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization]
--"MinVmVersionForCpuBasedMitigations"="1.0"
-
 ; Proxy PAC
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
