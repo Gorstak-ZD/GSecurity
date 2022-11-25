@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+; Extensions
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Comodo\Dragon\Extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm]
+"update_url"="https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Comodo\Dragon\Extensions\ldpochfccmkkmhdbclfhpagapcfdljkj]
+"update_url"="https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Comodo\Dragon\Extensions\fihnjjcciajhdojfnbdddfaoknhalnja]
+"update_url"="https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Comodo\Dragon\Extensions\pkehgijcmpdhfbdbbnkijodmdjhbjlgp]
+"update_url"="https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Comodo\Dragon\Extensions\mlomiejdfkolichcflejclcbmpeaniij]
+"update_url"="https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Comodo\Dragon\InstallAddonsPermission\Allow]
+"1"="https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Comodo\Dragon\ExtensionInstallAllowlist]
+"1"="mlomiejdfkolichcflejclcbmpeaniij"
+"2"="pkehgijcmpdhfbdbbnkijodmdjhbjlgp"
+"3"="fihnjjcciajhdojfnbdddfaoknhalnja"
+"4"="ldpochfccmkkmhdbclfhpagapcfdljkj"
+"5"="cjpalhdlnbpafiamejdnhcphjbkeiagm"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Comodo\Dragon]
+"BookmarkBarEnabled"=dword:00000001
