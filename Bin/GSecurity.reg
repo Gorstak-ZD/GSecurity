@@ -899,7 +899,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9653}]
 "Description"=""
-"ItemData"="\\\\"
+"ItemData"="*nvcontainersetup*"
 "SaferFlags"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0de0dca2-c2e6-4c47-95a2-71b2135c5575}]
