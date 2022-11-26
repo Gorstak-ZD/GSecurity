@@ -40,109 +40,343 @@ icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /
 
 :: Drives permissions
 takeown /f a:
-icacls a: /remove:g "Users"
-icacls a: /remove:g "Authenticated Users"
-icacls a:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls a: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls a: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls a: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls a: /remove "Users"
+icacls a: /remove "Authenticated Users"
+icacls a: /remove "Everyone"
+
 takeown /f b:
-icacls b: /remove:g "Users"
-icacls b: /remove:g "Authenticated Users"
-icacls b:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls b: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls b: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls b: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls b: /remove "Users"
+icacls b: /remove "Authenticated Users"
+icacls b: /remove "Everyone"
+
 takeown /f c:
-icacls c: /remove:g "Users"
-icacls c: /remove:g "Authenticated Users"
-icacls c:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls c: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls c: /remove "Authenticated Users"
+icacls c: /remove "Users"
+
 takeown /f d:
-icacls d: /remove:g "Users"
-icacls d: /remove:g "Authenticated Users"
-icacls d:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls d: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls d: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls d: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls d: /remove "Users"
+icacls d: /remove "Authenticated Users"
+icacls d: /remove "Everyone"
+
 takeown /f e:
-icacls e: /remove:g "Users"
-icacls e: /remove:g "Authenticated Users"
-icacls e:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls e: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls e: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls e: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls e: /remove "Users"
+icacls e: /remove "Authenticated Users"
+icacls e: /remove "Everyone"
+
 takeown /f f:
-icacls f: /remove:g "Users"
-icacls f: /remove:g "Authenticated Users"
-icacls f:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls f: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls f: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls f: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls f: /remove "Users"
+icacls f: /remove "Authenticated Users"
+icacls f: /remove "Everyone"
+
 takeown /f g:
-icacls g: /remove:g "Users"
-icacls g: /remove:g "Authenticated Users"
-icacls g:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls g: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls g: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls g: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls g: /remove "Users"
+icacls g: /remove "Authenticated Users"
+icacls g: /remove "Everyone"
+
 takeown /f h:
-icacls h: /remove:g "Users"
-icacls h: /remove:g "Authenticated Users"
-icacls h:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls h: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls h: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls h: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls h: /remove "Users"
+icacls h: /remove "Authenticated Users"
+icacls h: /remove "Everyone"
+
 takeown /f i:
-icacls i: /remove:g "Users"
-icacls i: /remove:g "Authenticated Users"
-icacls i:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls i: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls i: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls i: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls i: /remove "Users"
+icacls i: /remove "Authenticated Users"
+icacls i: /remove "Everyone"
+
 takeown /f j:
-icacls j: /remove:g "Users"
-icacls j: /remove:g "Authenticated Users"
-icacls j:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls j: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls j: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls j: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls j: /remove "Users"
+icacls j: /remove "Authenticated Users"
+icacls j: /remove "Everyone"
+
 takeown /f k:
-icacls k: /remove:g "Users"
-icacls k: /remove:g "Authenticated Users"
-icacls k:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls k: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls k: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls k: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls k: /remove "Users"
+icacls k: /remove "Authenticated Users"
+icacls k: /remove "Everyone"
+
 takeown /f l:
-icacls l: /remove:g "Users"
-icacls l: /remove:g "Authenticated Users"
-icacls l:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls l: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls l: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls l: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls l: /remove "Users"
+icacls l: /remove "Authenticated Users"
+icacls l: /remove "Everyone"
+
 takeown /f m:
-icacls m: /remove:g "Users"
-icacls m: /remove:g "Authenticated Users"
-icacls m:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls m: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls m: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls m: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls m: /remove "Users"
+icacls m: /remove "Authenticated Users"
+icacls m: /remove "Everyone"
+
 takeown /f n:
-icacls n: /remove:g "Users"
-icacls n: /remove:g "Authenticated Users"
-icacls n:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls n: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls n: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls n: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls n: /remove "Users"
+icacls n: /remove "Authenticated Users"
+icacls n: /remove "Everyone"
+
 takeown /f o:
-icacls o: /remove:g "Users"
-icacls o: /remove:g "Authenticated Users"
-icacls o:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls o: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls o: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls o: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls o: /remove "Users"
+icacls o: /remove "Authenticated Users"
+icacls o: /remove "Everyone"
+
 takeown /f p:
-icacls p: /remove:g "Users"
-icacls p: /remove:g "Authenticated Users"
-icacls p:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls p: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls p: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls p: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls p: /remove "Users"
+icacls p: /remove "Authenticated Users"
+icacls p: /remove "Everyone"
+
 takeown /f q:
-icacls q: /remove:g "Users"
-icacls q: /remove:g "Authenticated Users"
-icacls q:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls q: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls q: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls q: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls q: /remove "Users"
+icacls q: /remove "Authenticated Users"
+icacls q: /remove "Everyone"
+
 takeown /f r:
-icacls r: /remove:g "Users"
-icacls r: /remove:g "Authenticated Users"
-icacls r:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls r: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls r: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls r: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls r: /remove "Users"
+icacls r: /remove "Authenticated Users"
+icacls r: /remove "Everyone"
+
 takeown /f s:
-icacls s: /remove:g "Users"
-icacls s: /remove:g "Authenticated Users"
-icacls s:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls s: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls s: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls s: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls s: /remove "Users"
+icacls s: /remove "Authenticated Users"
+icacls s: /remove "Everyone"
+
 takeown /f t:
-icacls t: /remove:g "Users"
-icacls t: /remove:g "Authenticated Users"
-icacls t:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls t: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls t: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls t: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls t: /remove "Users"
+icacls t: /remove "Authenticated Users"
+icacls t: /remove "Everyone"
+
 takeown /f u:
-icacls u: /remove:g "Users"
-icacls u: /remove:g "Authenticated Users"
-icacls u:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls u: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls u: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls u: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls u: /remove "Users"
+icacls u: /remove "Authenticated Users"
+icacls u: /remove "Everyone"
+
 takeown /f v:
-icacls v: /remove:g "Users"
-icacls v: /remove:g "Authenticated Users"
-icacls v:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls v: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls v: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls v: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls v: /remove "Users"
+icacls v: /remove "Authenticated Users"
+icacls v: /remove "Everyone"
+
 takeown /f w:
-icacls w: /remove:g "Users"
-icacls w: /remove:g "Authenticated Users"
-icacls w:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls w: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls w: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls w: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls w: /remove "Users"
+icacls w: /remove "Authenticated Users"
+icacls w: /remove "Everyone"
+
 takeown /f x:
-icacls x: /remove:g "Users"
-icacls x: /remove:g "Authenticated Users"
-icacls x:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls x: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls x: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls x: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls x: /remove "Users"
+icacls x: /remove "Authenticated Users"
+icacls x: /remove "Everyone"
+
 takeown /f y:
-icacls y: /remove:g "Users"
-icacls y: /remove:g "Authenticated Users"
-icacls y:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls y: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls y: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls y: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls y: /remove "Users"
+icacls y: /remove "Authenticated Users"
+icacls y: /remove "Everyone"
+
 takeown /f z:
-icacls z: /remove:g "Users"
-icacls z: /remove:g "Authenticated Users"
-icacls z:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls z: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+icacls z: /inheritance:e /grant:r Administrators:(OI)(CI)F /t /l /q /c
+icacls z: /inheritance:e /grant:r System:(OI)(CI)F /t /l /q /c
+icacls z: /remove "Users"
+icacls z: /remove "Authenticated Users"
+icacls z: /remove "Everyone"
+
+:: exit
+exit
+
+Basically you need to create a text file with the above code with cmd or bat extension, for example GSecurity.bat and execute it.
+Almost forgot, a simple format command or windows reinstall will create these groups again, so if you format something or reinstall, run the file again.
+That's it. Cheers!
+Last edited: Feb 2, 2022
+LikeLove Reactions:reddove, edge37, vijay joseph and 13 others
+Maliwari
+Member
+Downloaded9.8 GB
+Uploaded7.3 GB
+Ratio0.74
+Seedbonus4,315
+Upload Count0 (0)
+MEMBER FOR 4 YEARS
+Jan 10, 2022
+#2
+
+Great post. Thanks for the hints...
+Like Reactions:reddove
+su_fullstackdeveloper
+Member
+Downloaded7.9 GB
+Uploaded13.3 GB
+Ratio1.68
+Seedbonus5,067
+Upload Count0 (0)
+MEMBER FOR 1 YEARS
+Jan 10, 2022
+#3
+
+Awesome upload mate... thank you so much for sharing it here
+Like Reactions:reddove
+1ntr0v3rt3ch
+1ntr0v3rt3ch
+✅ Verified Member
+Member
+Downloaded426.3 GB
+Uploaded127 TB
+Ratio305.09
+Seedbonus1,001,521
+Upload Count0 (0)
+MEMBER FOR 3 YEARS
+Jan 10, 2022
+#4
+
+thanks for sharing this. this is very helpful!
+Like Reactions:reddove
+Gorstak
+Gorstak
+✅ Verified Member
+Member
+Downloaded214.3 GB
+Uploaded102.5 GB
+Ratio0.48
+Seedbonus987
+Upload Count0 (0)
+MEMBER FOR 3 YEARS
+Feb 2, 2022
+#5
+
+I updated the script as the first version needed tweaking :p
+Like Reactions:reddove and Chuck
+Chuck
+Chuck
+🤴 Super Admin
+📂 Uploader
+Downloaded257.4 GB
+Uploaded2.4 TB
+Ratio9.41
+Seedbonus361,864
+Upload Count14 (16)
+MEMBER FOR 4 YEARS
+Feb 2, 2022
+#6
+
+Gorstak said:
+I updated the script as the first version needed tweaking :p
+Can you write a script to reverse the changes?
+I don't really want to start out on a one way jorney.
+Like Reactions:PsyTom, reddove and Gorstak
+Gorstak
+Gorstak
+✅ Verified Member
+Member
+Downloaded214.3 GB
+Uploaded102.5 GB
+Ratio0.48
+Seedbonus987
+Upload Count0 (0)
+MEMBER FOR 3 YEARS
+Feb 2, 2022
+#7
+
+I'm afraid I cam't do that Dave. I don't know of a way to remove your current user account from permissions, nor old one. Maybe I will learn in the future.
+Like Reactions:PsyTom, reddove and Chuck
+PsyTom
+PsyTom
+Moderator
+Downloaded1.3 TB
+Uploaded248.6 TB
+Ratio188.81
+Seedbonus10,169,597
+Upload Count0 (0)
+MEMBER FOR 2 YEARS
+Feb 28, 2022
+#8
+
+thank you for sharing the information.
+Last edited: Jul 21, 2022
+Love Reactions:reddove
+You must log in or register to reply here.
+Share:
+Facebook
+Twitter
+Reddit
+Pinterest
+Tumblr
+WhatsApp
+Email
+Link
+Forums
+Others
+Tips & Tricks
+ Dark Theme [New]
+Contact us
+Terms and rules
+Privacy policy
+Help
+Home
+RSS
+
 
 :: Pagefile
 wmic computersystem where name="%computername%" set AutomaticManagedPagefile=True
