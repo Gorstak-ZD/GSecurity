@@ -1006,6 +1006,117 @@ Windows Registry Editor Version 5.00
 "SpyNetReporting"=dword:00000000
 "SubmitSamplesConsent"=dword:00000002
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers]
+"authenticodeenabled"=dword:00000000
+"DefaultLevel"=dword:00040000
+"TransparentEnabled"=dword:00000001
+"PolicyScope"=dword:00000000
+"ExecutableTypes"=hex(7):41,00,44,00,45,00,00,00,41,00,44,00,50,00,00,00,42,00,\
+  41,00,53,00,00,00,42,00,41,00,54,00,00,00,43,00,48,00,4d,00,00,00,43,00,4d,\
+  00,44,00,00,00,43,00,4f,00,4d,00,00,00,43,00,50,00,4c,00,00,00,43,00,52,00,\
+  54,00,00,00,45,00,58,00,45,00,00,00,48,00,4c,00,50,00,00,00,48,00,54,00,41,\
+  00,00,00,49,00,4e,00,46,00,00,00,49,00,4e,00,53,00,00,00,49,00,53,00,50,00,\
+  00,00,4c,00,4e,00,4b,00,00,00,4d,00,44,00,42,00,00,00,4d,00,44,00,45,00,00,\
+  00,4d,00,53,00,43,00,00,00,4d,00,53,00,49,00,00,00,4d,00,53,00,50,00,00,00,\
+  4d,00,53,00,54,00,00,00,4f,00,43,00,58,00,00,00,50,00,43,00,44,00,00,00,50,\
+  00,49,00,46,00,00,00,52,00,45,00,47,00,00,00,53,00,43,00,52,00,00,00,53,00,\
+  48,00,53,00,00,00,55,00,52,00,4c,00,00,00,56,00,42,00,00,00,57,00,53,00,43,\
+  00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9650}]
+"Description"=""
+"ItemData"="*schedule*"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9651}]
+"Description"=""
+"ItemData"="*reged*"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9652}]
+"Description"=""
+"ItemData"="?:\\$*"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9653}]
+"Description"=""
+"ItemData"="\\\\"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0de0dca2-c2e6-4c47-95a2-71b2135c5575}]
+"LastModified"=hex(b):b7,8f,88,e0,a5,ff,d8,01
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"="?://44.*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{272dd515-7163-421c-893d-a82260d1482a}]
+"LastModified"=hex(b):4b,40,38,28,a6,ff,d8,01
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"="?://224.0.0.2*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{27ba0ec5-514f-45f5-9d52-7151c46d8f44}]
+"LastModified"=hex(b):c1,f0,28,ca,a4,ff,d8,01
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"=hex(2):3f,00,3a,00,2f,00,2f,00,25,00,63,00,6f,00,6d,00,70,00,75,00,\
+  74,00,65,00,72,00,6e,00,61,00,6d,00,65,00,25,00,2a,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{2d11861d-3902-4714-8200-c0552ec46485}]
+"Description"=""
+"ItemData"="*dllhost.exe"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{2d2393f7-ecc6-4ec6-b522-9d5bc6a11a5f}]
+"LastModified"=hex(b):22,58,6a,c6,a5,ff,d8,01
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"="?://127.0.0.*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{36f1c303-882f-4365-911b-9244169598cc}]
+"LastModified"=hex(b):87,e3,af,f8,a4,ff,d8,01
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"="?://192.168.*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{3b982c60-0b35-4f9b-a607-7b40a790fdd2}]
+"Description"=""
+"ItemData"="*hh.exe"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{6c535770-d590-4018-b225-f26e3956c3ad}]
+"LastModified"=hex(b):65,f5,55,b9,a5,ff,d8,01
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"="?://172.16.*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{9e559754-e56c-4759-bf32-fc0bbb832b5e}]
+"Description"=""
+"ItemData"="*ftp.exe"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{a5f78d63-bac4-49e9-92af-2cac820f5ae7}]
+"Description"=""
+"ItemData"="*msedgewebview2.exe"
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{f23ca67d-8430-46ba-9779-3bade7f1e646}]
+"LastModified"=hex(b):ff,7d,45,d7,a5,ff,d8,01
+"Description"=""
+"SaferFlags"=dword:00000000
+"ItemData"="?://10.*"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{fc36cc7b-f7ca-4f9c-a7f9-f4e5d13f650b}]
+"Description"=""
+"ItemData"="*progman.exe"
+"SaferFlags"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall]
 "IPSecExempt"=dword:00000000
 "PolicyVersion"=dword:0000021f
