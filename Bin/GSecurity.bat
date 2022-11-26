@@ -38,6 +38,112 @@ takeown /f "%USERPROFILE%\Desktop" /r /d y
 icacls "%USERPROFILE%\Desktop" /inheritance:r
 icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
 
+:: Drives permissions
+takeown /f a:
+icacls a: /remove:g "Users"
+icacls a: /remove:g "Authenticated Users"
+icacls a:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f b:
+icacls b: /remove:g "Users"
+icacls b: /remove:g "Authenticated Users"
+icacls b:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f c:
+icacls c: /remove:g "Users"
+icacls c: /remove:g "Authenticated Users"
+icacls c:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f d:
+icacls d: /remove:g "Users"
+icacls d: /remove:g "Authenticated Users"
+icacls d:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f e:
+icacls e: /remove:g "Users"
+icacls e: /remove:g "Authenticated Users"
+icacls e:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f f:
+icacls f: /remove:g "Users"
+icacls f: /remove:g "Authenticated Users"
+icacls f:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f g:
+icacls g: /remove:g "Users"
+icacls g: /remove:g "Authenticated Users"
+icacls g:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f h:
+icacls h: /remove:g "Users"
+icacls h: /remove:g "Authenticated Users"
+icacls h:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f i:
+icacls i: /remove:g "Users"
+icacls i: /remove:g "Authenticated Users"
+icacls i:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f j:
+icacls j: /remove:g "Users"
+icacls j: /remove:g "Authenticated Users"
+icacls j:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f k:
+icacls k: /remove:g "Users"
+icacls k: /remove:g "Authenticated Users"
+icacls k:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f l:
+icacls l: /remove:g "Users"
+icacls l: /remove:g "Authenticated Users"
+icacls l:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f m:
+icacls m: /remove:g "Users"
+icacls m: /remove:g "Authenticated Users"
+icacls m:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f n:
+icacls n: /remove:g "Users"
+icacls n: /remove:g "Authenticated Users"
+icacls n:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f o:
+icacls o: /remove:g "Users"
+icacls o: /remove:g "Authenticated Users"
+icacls o:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f p:
+icacls p: /remove:g "Users"
+icacls p: /remove:g "Authenticated Users"
+icacls p:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f q:
+icacls q: /remove:g "Users"
+icacls q: /remove:g "Authenticated Users"
+icacls q:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f r:
+icacls r: /remove:g "Users"
+icacls r: /remove:g "Authenticated Users"
+icacls r:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f s:
+icacls s: /remove:g "Users"
+icacls s: /remove:g "Authenticated Users"
+icacls s:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f t:
+icacls t: /remove:g "Users"
+icacls t: /remove:g "Authenticated Users"
+icacls t:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f u:
+icacls u: /remove:g "Users"
+icacls u: /remove:g "Authenticated Users"
+icacls u:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f v:
+icacls v: /remove:g "Users"
+icacls v: /remove:g "Authenticated Users"
+icacls v:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f w:
+icacls w: /remove:g "Users"
+icacls w: /remove:g "Authenticated Users"
+icacls w:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f x:
+icacls x: /remove:g "Users"
+icacls x: /remove:g "Authenticated Users"
+icacls x:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f y:
+icacls y: /remove:g "Users"
+icacls y: /remove:g "Authenticated Users"
+icacls y:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+takeown /f z:
+icacls z: /remove:g "Users"
+icacls z: /remove:g "Authenticated Users"
+icacls z:/grant:r "CONSOLE LOGON":(OI)(CI)F /t /l /q /c
+
 :: Pagefile
 wmic computersystem where name="%computername%" set AutomaticManagedPagefile=True
 
