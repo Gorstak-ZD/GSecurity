@@ -1,0 +1,32 @@
+; Copyright (C) 2007 McAfee, Inc. All Rights Reserved.
+
+[Version]
+Signature = "$Windows NT$"
+Class = "ANTIVIRUS"
+ClassGUID = {B1D1A169-C54F-4379-81DB-BEE7D88D7454}
+; Refer to driver file version resources for accurate version info.
+DriverVer = 01/01/2018, 1.4.1.1
+Provider = McAfee Inc.
+CatalogFile = mfeplk.cat
+
+[Strings]
+SourceDiskName = "Installation Files"
+McAfee = "McAfee"
+
+[SourceDisksNames]
+1 = %SourceDiskName%
+
+[SourceDisksFiles]
+mfeplk.sys = 1
+
+[DestinationDirs]
+MfeFiles = 12
+
+[DefaultInstall]
+CopyFiles = MfeFiles
+
+[DefaultInstall.NTamd64]
+CopyFiles = MfeFiles
+
+[MfeFiles]
+mfeplk.sys,mfeplk.sys,,4
