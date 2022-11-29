@@ -20,5 +20,8 @@ Reg import Services.reg
 :: Performance
 Reg import Performance.reg
 
+:: Security
+Reg import GSecurity.reg
+
 :: Exit
 exit
