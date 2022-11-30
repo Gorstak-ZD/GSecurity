@@ -1235,6 +1235,11 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths]
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9647}]
+"Description"=""
+"ItemData"="*python*"
+"SaferFlags"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9648}]
 "Description"=""
 "ItemData"="*setup.exe"
