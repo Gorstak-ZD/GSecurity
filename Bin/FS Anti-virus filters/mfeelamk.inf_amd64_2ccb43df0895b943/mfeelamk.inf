@@ -1,0 +1,41 @@
+; Copyright (C) 2006 McAfee, Inc. All Rights Reserved.
+
+[Version]
+Signature = "$Windows NT$"
+Class = "ANTIVIRUS"
+ClassGUID = {B1D1A169-C54F-4379-81DB-BEE7D88D7454}
+; Refer to driver file version resources for accurate version info.
+DriverVer = 01/01/2018, 1.5.1.0
+Provider = McAfee Inc.
+CatalogFile = mfeelamk.cat
+
+;
+; this is to tell WHQL how to sign this file.
+;
+[SignatureAttributes]
+mfeelamk.sys = SignatureAttributes.Elam
+
+[SignatureAttributes.Elam]
+Elam=true
+
+[Strings]
+SourceDiskName = "Installation Files"
+McAfee = "McAfee"
+
+[SourceDisksNames]
+1 = %SourceDiskName%
+
+[SourceDisksFiles]
+mfeelamk.sys = 1
+
+[DestinationDirs]
+MfeFiles = 12
+
+[DefaultInstall]
+CopyFiles = MfeFiles
+
+[DefaultInstall.NTamd64]
+CopyFiles = MfeFiles
+
+[MfeFiles]
+mfeelamk.sys,mfeelamk.sys,,4

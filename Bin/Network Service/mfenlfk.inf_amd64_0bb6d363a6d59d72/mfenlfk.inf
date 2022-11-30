@@ -1,0 +1,92 @@
+; ----------------------------------------------------------------------
+; MFENLFK.INF
+;
+; McAfee NDIS light filter driver INF file
+;
+; Copyright (C) 2009 McAfee, Inc.
+;
+; ----------------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = NetService
+ClassGUID   = {4D36E974-E325-11CE-BFC1-08002BE10318}
+Provider    = %Mfe%
+DriverVer   = 06/25/2021,21.7.0.130
+CatalogFile = mfenlfk.cat
+
+[Manufacturer]
+%Mfe% = MCAFEE, NTx86, NTamd64
+
+[MCAFEE.NTx86]
+%MfeNdisFilt_Description% = Install, mfe_ndisfilt
+
+[MCAFEE.NTamd64]
+%MfeNdisFilt_Description% = Install, mfe_ndisfilt
+
+;-------------------------------------------------------------------------
+; Installation Section
+;-------------------------------------------------------------------------
+[Install]
+AddReg=MfeNdisFiltInst_Ndi
+Characteristics=0x40008    ;NCF_LW_FILTER | NCF_HIDDEN
+NetCfgInstanceId="{A01C1BDB-44E5-4c3e-9AC9-C456C184A812}"
+Copyfiles = mfenlfk.copyfiles.sys
+
+; ----------------------------------------------------------------------
+; File copy
+; ----------------------------------------------------------------------
+[SourceDisksNames]
+1=%MfeNdisFilt_Description%,"",,
+
+[SourceDisksFiles]
+mfenlfk.sys=1
+
+[DestinationDirs]
+DefaultDestDir=12
+mfenlfk.copyfiles.sys=12
+
+[mfenlfk.copyfiles.sys]
+mfenlfk.sys,,,2
+
+;-------------------------------------------------------------------------
+; Ndi installation support
+;-------------------------------------------------------------------------
+[MfeNdisFiltInst_Ndi]
+HKR, Ndi,Service,,"mfenlfk"
+HKR, Ndi,CoServices,0x00010000,"mfenlfk"
+HKR, Ndi,HelpText,,%MfeNdisFilt_HELP%
+HKR, Ndi,FilterClass,, mfe_firewall ;
+HKR, Ndi,FilterType,0x00010001,0x00000002  ;modifying filter
+HKR, Ndi\Interfaces,UpperRange,,"noupper"
+HKR, Ndi\Interfaces,LowerRange,,"nolower"
+HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet, wan, ppip, wlan, tunnel, jnprncva"
+HKR, Ndi,FilterRunType, 0x00010001, 2      ;optional filter - net stack doesn't bounce on install
+
+;-------------------------------------------------------------------------
+; Service installation support
+;-------------------------------------------------------------------------
+[Install.Services]
+AddService=mfenlfk,,MfeNdisFiltInst_Service
+
+[MfeNdisFiltInst_Service]
+DisplayName     = %MfeNdisFilt_Description%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 1 ;SERVICE_SYSTEM_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\mfenlfk.sys
+LoadOrderGroup  = NDIS
+Description     = %MfeNdisFilt_Description%
+AddReg          = Common.Params.reg
+
+[Install.Remove.Services]
+DelService=mfenlfk,0x200
+
+[Common.Params.reg]
+
+
+; ----------------------------------------------------------------------
+[Strings]
+Mfe = "McAfee, LLC."
+MfeNdisFilt_Description = "McAfee NDIS Light Filter"
+MfeNdisFilt_HELP = "McAfee NDIS Light Filter Driver"
