@@ -2,6 +2,15 @@ Windows Registry Editor Version 5.00
 
 ; GSecurity
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\UX Configuration]
+"Notification_Suppress"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=dword:00000001
+"DisableEnhancedNotifications"=dword:00000001
+
 [HKEY_CLASSES_ROOT]
 
 [HKEY_CLASSES_ROOT\DesktopBackground]
