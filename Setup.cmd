@@ -18,7 +18,7 @@ if %errorlevel% == 0 (
     call :IsAdmin
 ) 
 :start
-call %~dp0\Bin\GSecurity.bat
+call %~dp0\Bin\SetupComplete.cmd
 exit
 :IsAdmin
 @powershell.exe Start-Process %~f0 -verb runas
