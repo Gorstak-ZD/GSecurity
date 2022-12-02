@@ -2,6 +2,11 @@ Windows Registry Editor Version 5.00
 
 ; GSecurity
 
+; Core isolation off (for mpx driver to run)
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity]
+"Enabled"=dword:00000000
+
 ; Context Menus
 
 [HKEY_CLASSES_ROOT\Directory\background\shell\OpenCmdHereAsAdmin]
@@ -1132,6 +1137,9 @@ Windows Registry Editor Version 5.00
 "Start"=dword:00000004
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\seclogon]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService]
 "Start"=dword:00000004
 
 ; GPrivacy
