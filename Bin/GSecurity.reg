@@ -1153,6 +1153,12 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService]
 "Start"=dword:00000004
 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\usbccgp]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSKSSRV]
+"Start"=dword:00000004
+
 ; GPrivacy
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
