@@ -2,6 +2,11 @@ Windows Registry Editor Version 5.00
 
 ; GSecurity
 
+; Only allow good drivers
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\EarlyLaunch]
+"DriverLoadPolicy"=dword:00000008
+
 ; Defender notifications
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\UX Configuration]
