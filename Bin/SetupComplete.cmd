@@ -643,12 +643,7 @@ echo 0.0.0.0 pagead-googlehosted.l.google.com
 )>"%systemdrive%\Windows\System32\Drivers\Etc\hosts"
 
 :: Registry
-Reg.exe import %~dp0BFE.reg
 Reg.exe import %~dp0GSecurity.reg
-Reg.exe import %~dp0HKCUPolicy.reg
-Reg.exe import %~dp0HKLMPolicy.reg
-Reg.exe import %~dp0Performance.reg
-Reg.exe import %~dp0Services.reg
 
 :: GCleaner
 reg delete "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\TrayNotify" /v "IconStreams" /f
