@@ -1,0 +1,97 @@
+; mfedisk.inf
+;
+; Installation inf for the McAfee Disk Access Protection Driver
+;
+; Copyright (c) McAfee, Inc
+;
+
+[Version]
+Signature = "$Windows NT$"
+Class     = DiskDrive
+ClassGUID = {4d36e967-e325-11ce-bfc1-08002be10318}
+Provider  = %mcafee%
+DriverVer   = 06/25/2021,21.7.0.130
+CatalogFile = mfedisk.cat
+
+[Manufacturer]
+%mcafee% = MCAFEE, NTx86, NTamd64
+
+[MCAFEE.NTx86]
+%MfeDiskFilt_Description% = Install, mfe_diskfilt
+
+[MCAFEE.NTamd64]
+%MfeDiskFilt_Description% = Install, mfe_diskfilt
+
+;
+; General installation section
+;
+
+[Install]
+CopyFiles = @mfedisk.sys
+Addreg    = mfedisk.AddReg
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[mfedisk.AddReg]
+HKLM, System\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}, UpperFilters, 0x00010008, mfedisk
+
+
+;
+; Service installation section
+;
+
+[Install.Services]
+AddService = mfedisk, , mfedisk.Service.Install
+
+[mfedisk.Service.Install]
+DisplayName    = %service_desc%
+ServiceType    = 1
+StartType      = 0
+ErrorControl   = 1
+ServiceBinary  = %12%\mfedisk.sys
+LoadOrderGroup = "PnP Filter"
+
+[SourceDisksFiles]
+mfedisk.sys=1
+
+; Win2000
+
+[SourceDisksNames]
+1 = %diskid1%,,,""
+
+; WinXP and later
+
+[SourceDisksNames.x86]
+1 = %diskid1%,,,""
+
+[SourceDisksNames.ia64]
+1 = %diskid1%,,,""
+
+[SourceDisksNames.amd64]
+1 = %diskid1%,,,""
+
+;
+; Uninstall Section
+;
+
+[Uninstall]
+DelReg = mfedisk.delreg
+
+[Uninstall.Services]
+DelService = mfedisk, 0x200
+
+[mfedisk.delreg]
+HKLM, System\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}, UpperFilters, 0x00018002, mfedisk
+
+;
+; Localizable Strings
+;
+
+[Strings]
+
+mcafee         = "McAfee Inc"
+MfeDiskFilt_Description = "McAfee AAC Disk Filter"
+MfeDiskFilt_HELP = "McAfee AAC Disk Filter Driver"
+service_desc = "McAfee AAC Disk Filter Driver"
+diskid1      = "McAfee Inc Installation Disk #1 (mfedisk)"

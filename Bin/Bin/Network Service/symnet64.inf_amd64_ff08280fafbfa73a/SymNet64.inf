@@ -1,0 +1,46 @@
+;
+; Symantec SND Driver INF File
+;
+; Copyright (c) 2022 Broadcom. All Rights Reserved.
+;
+
+[Version]
+signature = "$Windows NT$"
+Class     = "NetService"
+ClassGuid = {4D36E974-E325-11CE-BFC1-08002BE10318}
+Provider  = %Symc%
+DriverVer   = 10/03/2022,17.2.0.165
+CatalogFile = SymNet64.cat
+
+[SourceDisksNames]
+1 = %Disk1%
+
+[SourceDisksFiles]
+symnets.sys = 1
+
+[DestinationDirs]
+DefaultDestDir = %%windir%%\system32\drivers
+
+[SymcInstall]
+CopyFiles = @symnets.sys
+
+;
+; Manufacturer section (required for DTM)
+; 10/01/2021 - It seems like we must have NTARM64 section even for x64 drivers otherwise DTM will fail.
+[Manufacturer]
+%Symc% = Symantec.SND, NTamd64, NTARM64
+
+[Symantec.SND.NTamd64]
+%Driver% = SND, SND
+
+[Symantec.SND.NTARM64]
+%Driver% = SND, SND
+
+[SND]
+CopyFiles = @symnets.sys
+
+[Strings]
+Symc        = "Symantec Corporation"
+symnetsDesc = "Symantec SND Driver"
+Disk1       = "SymNet Source Media"
+Driver      = "SymNet 64-bit Driver"
