@@ -12,4 +12,3 @@ reg delete HKCU\SOFTWARE\Policies /f
 
 :: Import policies
 lgpo /g %~dp0
-netsh advfirewall import %~dp0GSecurity.wfw
