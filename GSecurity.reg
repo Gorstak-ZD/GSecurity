@@ -81,9 +81,10 @@ Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PowerShellAsAdmin]
 
-; To allow mapped drives to be available in elevated PowerShell
+; To disallow mapped drives to be available in elevated PowerShell
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"EnableLinkedConnections"=dword:00000001
+"EnableLinkedConnections"=dword:00000000
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\SafeMode]
 "icon"="bootux.dll,-1032"
@@ -893,16 +894,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9647}]
 "Description"=""
 "ItemData"="*python*"
-"SaferFlags"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9648}]
-"Description"=""
-"ItemData"="*setup.exe"
-"SaferFlags"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9649}]
-"Description"=""
-"ItemData"="*setup32.exe"
 "SaferFlags"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\0\Paths\{0337583f-4685-45fe-b0ff-cf1f455d9650}]
