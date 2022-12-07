@@ -1,0 +1,36 @@
+; SymErase INF File
+; 
+;
+; 
+; Copyright (c) Broadcom. All Rights Reserved.
+; 
+[Version] 
+Signature = "$Windows NT$" 
+Class = "Antivirus"
+ClassGUID = {B1D1A169-C54F-4379-81DB-BEE7D88D7454}
+Provider = %Symc% 
+DriverVer= 08/24/2022,119.1.5.1
+CatalogFile=SymEra64.cat
+
+[DestinationDirs] 
+DefaultDestDir = 01, temp.^^^
+
+[SymcInstall]
+
+[DefaultInstall]
+CopyFiles  = @EECTRL64.sys
+CopyFiles  = @Eraser64.sys
+
+[DefaultUninstall]
+
+[Strings]
+Symc = "Symantec Corporation"
+Disk1 = "Eraser Source Media"
+Driver = "Eraser AMD64bit Driver"
+
+[SourceDisksNames]
+1 = %Disk1%
+
+[SourceDisksFiles]
+EECTRL64.sys = 1
+Eraser64.sys = 1
