@@ -1,0 +1,49 @@
+;
+; ccSettings x64 INF File
+;
+; Copyright (c) 2021, Symantec Corporation
+;
+[Version]
+signature   = "$Windows NT$"
+Class       = "ActivityMonitor"
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider    = %Symc%
+DriverVer   = 12/14/2021,17.3.0.48
+CatalogFile = ccSetx64.cat
+;
+[SourceDisksNames]
+1 = %Disk1%
+;
+[SourceDisksFiles]
+ccSetx64.sys = 1
+;
+[DestinationDirs]
+DefaultDestDir = %%windir%%\system32\drivers
+;
+[SymcInstall]
+CopyFiles = @ccSetx64.sys
+;
+;[DefaultInstall]
+;
+;[DefaultUninstall]
+;
+;
+; Manufacturer section (required for DTM)
+;
+[Manufacturer]
+%Symc% = Symantec.ccSet, NTamd64, NTarm64
+;
+[Symantec.ccSet.NTamd64]
+%Driver% = ccSet, ccSet
+;
+[Symantec.ccSet.NTarm64]
+%Driver% = ccSet, ccSet
+;
+[ccSet]
+CopyFiles = @ccSetx64.sys
+;
+;
+[Strings]
+Symc = "Symantec Corporation"
+Disk1 = "ccSettings Source Media"
+Driver = "ccSettings x64 Driver"

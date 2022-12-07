@@ -1,0 +1,83 @@
+;;;
+;;; Malwarebytes Anti-Malware SwissArmy
+;;;
+;;;
+;;; Copyright (c) 2017, Malwarebytes
+;;;
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = "ActivityMonitor"                         ;This is determined by the work this filter driver does
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider    = %Malwarebytes%
+DriverVer   = 03/02/2016,3.0.0.30
+CatalogFile = mbamswissarmy.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+Swissarmy.DriverFiles = 12                        ;%windir%\system32\drivers
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc          = %SwissarmyServiceDesc%
+CopyFiles           = Swissarmy.DriverFiles
+
+[DefaultInstall.Services]
+AddService          = %SwissarmyServiceName%,,Swissarmy.Service
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles   = Swissarmy.DriverFiles
+
+
+[DefaultUninstall.Services]
+DelService = %SwissarmyServiceName%,0x200      ;Ensure service is stopped before deleting
+
+;
+; Services Section
+;
+
+[Swissarmy.Service]
+DisplayName      = %SwissarmyServiceName%
+Description      = %SwissarmyServiceDesc%
+ServiceBinary    = %12%\mbamswissarmy.sys            ;%windir%\system32\drivers\mbamswissarmy.sys
+ServiceType      = 1                                 ;SERVICE_KERNEL_DRIVER
+StartType        = 3                                 ;SERVICE_DEMAND_START
+ErrorControl     = 1                                 ;SERVICE_ERROR_NORMAL
+AddReg           = Swissarmy.AddRegistry
+
+[Swissarmy.AddRegistry]
+HKR,"",%RegImageValueName%,0x00020000,\SystemRoot\System32\Drivers\mbamswissarmy.sys
+
+;
+; Copy Files
+;
+
+[Swissarmy.DriverFiles]
+%SwissarmyDriverName%.sys
+
+[SourceDisksFiles]
+mbamswissarmy.sys = 1,,
+
+[SourceDisksNames]
+1 = %Disk1%
+
+;;
+;; String Section
+;;
+
+[Strings]
+Malwarebytes                        = "Malwarebytes"
+SwissarmyServiceDesc                = "Malwarebytes Anti-Malware Swiss Army"
+SwissarmyServiceName                = "MBAMSwissArmy"
+SwissarmyDriverName                 = "mbamswissarmy"
+SwissarmyDebugLevel                 = "DebugLevel"
+SwissarmyFlagsValueName             = "Flags"
+RegImageValueName                   = "ImagePath"
+Disk1                               = "SwissarmyKernel Source Media"

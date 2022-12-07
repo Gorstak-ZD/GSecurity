@@ -1,0 +1,63 @@
+;
+; SymELAM.inf
+;
+; Copyright (c) 2021, Symantec Corporation
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=SecurityDevices
+ClassGuid={d94ee5d8-d189-4994-83d2-f68d7d41b0e6}
+Provider    = %ManufacturerName%
+DriverVer= 06/01/2022,2.5.0.54
+CatalogFile=SymELAM.cat
+CatalogFile.NTamd64=SymELAM64.cat
+
+[SourceDisksNames.x86]
+1 = %Disk1%
+
+[SourceDisksNames.amd64]
+1 = %Disk1%
+
+[SourceDisksNames.ARM64]
+1 = %Disk1%
+
+[SourceDisksFiles.x86]
+SymELAM.sys = 1
+
+[SourceDisksFiles.amd64]
+SymELAM.sys = 1
+
+[SourceDisksFiles.arm64]
+SymELAM.sys = 1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[Manufacturer]
+%ManufacturerName%=Symantec.SymELAM, NTx86, NTamd64, NTARM64
+
+[Symantec.SymELAM.NTx86] 
+%Driver% = SymELAM, SymELAM
+
+[Symantec.SymELAM.NTamd64] 
+%Driver% = SymELAM, SymELAM
+
+[Symantec.SymELAM.NTARM64] 
+%Driver% = SymELAM, SymELAM
+
+[SymELAM]
+CopyFiles  = @SymELAM.sys
+CopyFiles  = @SymELAM.sys
+
+[Strings]
+ManufacturerName="Symantec Corporation"
+Disk1 = "SymELAM Source Media"
+Driver="SymELAM Driver"
+Service_Desc="Symantec Early Load Antimalware Driver"
+
+[SignatureAttributes]
+SymELAM.sys=SignatureAttributes.Elam
+
+[SignatureAttributes.Elam]
+Elam=true

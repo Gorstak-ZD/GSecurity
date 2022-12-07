@@ -1,0 +1,73 @@
+;;;
+;;; Copyright (c) Microsoft Corporation. All rights reserved
+;;;
+;;; Abstract:
+;;; Callout sample driver install configuration.
+;;;
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = "ActivityMonitor"
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider 	= %Malwarebytes%
+DriverVer = 04/14/2022,8.16.32.175
+CatalogFile = mwac.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+MWAC.DriverFiles = 12 			;%windir%\system32\drivers
+
+;;
+;; Default install sections
+;;
+[DefaultInstall]
+OptionDesc          = %MWACServiceDesc%
+CopyFiles           = MWAC.DriverFiles
+
+[DefaultInstall.Services]
+AddService          = %MWACServiceName%,,MWAC.Service
+
+;;
+;; Default uninstall sections
+;;
+[DefaultUninstall]
+DelFiles   = MWAC.DriverFiles
+
+[DefaultUninstall.Services]
+DelService = %MWACServiceName%,0x200		; Flags note to stop service first
+
+;
+; Services Section
+;
+[MWAC.Service]
+DisplayName      = %MWACServiceName%
+Description      = %MWACServiceDesc%
+ServiceBinary    = %12%\mwac.sys  		; %windir%\system32\drivers\mwac.sys
+Dependencies     = %BFEServiceName%		; BFE
+ServiceType      = 1				;SERVICE_KERNEL_DRIVER
+StartType        = 3				;SERVICE_DEMAND_START
+ErrorControl     = 1				;SERVICE_ERROR_NORMAL
+
+;
+; Copy Files
+;
+
+[MWAC.DriverFiles]
+mwac.sys
+
+[SourceDisksFiles]
+mwac.sys = 1
+
+[SourceDisksNames]
+1 = %Disk1%
+
+;;
+;; String Section
+;;
+[Strings]
+Malwarebytes     = "Malwarebytes"
+MWACServiceDesc  = "Malwarebytes Web Protection"
+MWACServiceName  = "MBAMWebProtection"
+BFEServiceName   = "BFE"
+Disk1            = "Mwac Source Media"
+

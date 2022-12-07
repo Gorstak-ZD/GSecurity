@@ -1,0 +1,80 @@
+;;;
+;;; MbamElam
+;;;
+
+[Version]
+Signature   = "$Windows NT$"
+Class		= "MalwarebytesElam"
+ClassGuid	= {dfcb9a84-a210-465c-8e8f-7f3f2e64458d}
+Provider    = %ManufacturerName%
+DriverVer   = 03/02/2016,3.1.0.10
+CatalogFile = MbamElam.cat
+
+[DestinationDirs]
+DefaultDestDir          = 12
+MiniFilter.DriverFiles  = 12            ;%windir%\system32\drivers
+
+[SignatureAttributes]
+MbamElam.sys=SignatureAttributes.Elam
+
+[SignatureAttributes.Elam]
+Elam=true 
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc          = %ServiceDescription%
+CopyFiles           = MbamElam.CopyDriverFiles
+[DefaultInstall.Services]
+AddService          = %ServiceName%,,MbamElam.Service
+
+;;
+;; Default uninstall sections
+;;
+[DefaultUninstall]
+DelFiles   = MbamElam.DelDriverFiles
+
+[DefaultUninstall.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deleting
+;
+; Services Section
+;
+[MbamElam.Service]
+DisplayName    = MbamElam
+Description    = Malwarebytes ELAM driver
+ServiceBinary  = %12%\MbamElam.sys
+ServiceType    = 1       ; SERVICE_KERNEL_DRIVER
+StartType      = 0       ; SERVICE_BOOT_START
+ErrorControl   = 3       ; SERVICE_ERROR_CRITICAL
+LoadOrderGroup = Early-Launch
+
+[MbamElam.CopyDriverFiles]
+MbamElam.sys,,,0x00002000	; COPYFLG_NOPRUNE
+
+[MbamElam.DelDriverFiles]
+MbamElam.sys,,,0x00010001	; (DELFLG_IN_USE | DELFLG_IN_USE1)
+
+[SourceDisksFiles]
+MbamElam.sys = 1,,
+
+[SourceDisksNames]
+1 = %DiskId1%,,,
+
+;;
+;; String Section
+;;
+
+[Strings]
+ManufacturerName        = "Malwarebytes"
+ServiceDescription      = "MbamElam Elam Driver"
+ServiceName             = "MbamElam"
+DriverName              = "MbamElam"
+DiskId1                 = "MbamElam Device Installation Disk"
+
+;Instances specific information.
+;DefaultInstance         = "MbamElam Instance"
+;Instance1.Name          = "MbamElam Instance"
+; TODO - Change the altitude value, see https://msdn.microsoft.com/en-us/windows/hardware/drivers/ifs/load-order-groups-and-altitudes-for-minifilter-drivers
+;Instance1.Altitude       = "329000""
+;Instance1.Flags         = 0x0              ; Allow all attachments

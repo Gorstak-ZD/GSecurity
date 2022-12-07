@@ -1,0 +1,103 @@
+;;;
+;;; Malwarebytes Anti-Malware Chameleon
+;;;
+;;;
+;;; Copyright (c) 2016, Malwarebytes
+;;;
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = "ActivityMonitor"                         ;This is determined by the work this filter driver does
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider    = %Malwarebytes%
+DriverVer   = 03/02/2016,3.0.0.30
+CatalogFile = MbamChameleon.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+Sp.DriverFiles = 12                        ;%windir%\system32\drivers
+
+;;
+;; Default install sections
+;;
+[DefaultInstall]
+OptionDesc          = %SpServiceDesc%
+CopyFiles           = Sp.DriverFilesCopy
+
+[DefaultInstall.Services]
+AddService          = %SpServiceName%,,Sp.Service
+
+;;
+;; Default uninstall sections
+;;
+[DefaultUninstall]
+DelFiles   = Sp.DriverFiles
+DelReg     = Sp.DelRegistry
+
+[DefaultUninstall.Services]
+DelService = %SpServiceName%,0x200      ;Ensure service is stopped before deleting
+
+;
+; Services Section
+;
+[Sp.Service]
+DisplayName      = %SpServiceName%
+Description      = %SpServiceDesc%
+ServiceBinary    = %12%\MbamChameleon.sys ;%windir%\system32\drivers\mbamchameleon.sys
+Dependencies     = %FltmgrServiceName%               ;FltMgr
+ServiceType      = 2                                 ;SERVICE_FILE_SYSTEM_DRIVER
+StartType        = 2                                 ;SERVICE_AUTO_START
+ErrorControl     = 1                                 ;SERVICE_ERROR_NORMAL
+LoadOrderGroup   = "FSFilter Activity Monitor"
+AddReg           = Sp.AddRegistry
+
+;
+; Registry Modifications
+;
+[Sp.AddRegistry]
+HKR,%RegInstancesSubkeyName%,%RegDefaultInstanceValueName%,0x00000000,%DefaultInstance%
+HKR,%RegInstancesSubkeyName%"\"%Instance1.Name%,%RegAltitudeValueName%,0x00000000,%Instance1.Altitude%
+HKR,%RegInstancesSubkeyName%"\"%Instance1.Name%,%RegFlagsValueName%,0x00010001,%Instance1.Flags%
+HKR,"",%RegEnabledValueName%,0x00010001,%Enabled%
+HKR,"",%RegImageValueName%,0x00000000,\SystemRoot\System32\Drivers\MbamChameleon.sys
+
+[Sp.DelRegistry]
+
+;
+; Copy Files
+;
+[Sp.DriverFilesCopy]
+MbamChameleon.sys
+
+[Sp.DriverFiles]
+MbamChameleon.sys
+
+[SourceDisksFiles]
+MbamChameleon.sys = 1
+
+[SourceDisksNames]
+1 = %Disk1%
+
+;;
+;; String Section
+;;
+[Strings]
+Malwarebytes                        = "Malwarebytes"
+SpServiceDesc                       = "Malwarebytes Anti-Malware Chameleon"
+SpServiceName                       = "MBAMChameleon"
+FltmgrServiceName                   = "FltMgr"
+RegInstancesSubkeyName              = "Instances"
+RegDefaultInstanceValueName         = "DefaultInstance"
+RegAltitudeValueName                = "Altitude"
+RegFlagsValueName                   = "Flags"
+RegEnabledValueName                 = "Enabled"
+RegImageValueName                   = "ImagePath"
+Disk1                               = "SelfProtectionKernel Source Media"
+Enabled                             = 0x0
+
+;Instances specific information.
+DefaultInstance      = "MBAMChameleon"
+Instance1.Name       = "MBAMChameleon"
+Instance1.Altitude   = "400900"
+Instance1.Flags      = 0x0
+
