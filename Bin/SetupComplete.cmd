@@ -443,6 +443,7 @@ Reg.exe import %~dp0GSecurity.reg
 Reg.exe import %~dp0Hid.reg
 Reg.exe import %~dp0HKCU.reg
 Reg.exe import %~dp0HKLM.reg
+Reg.exe import %~dp0IPSEC.reg
 Reg.exe import %~dp0Services.reg
 Reg.exe import %~dp0SysHardener.reg
 Reg.exe import %~dp0WebControl.reg
