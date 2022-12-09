@@ -153,11 +153,12 @@ Windows Registry Editor Version 5.00
 "HibernateEnabledDefault"=dword:00000000
 
 [HKEY_CURRENT_USER\Control Panel\Desktop]
-"MenuShowDelay"="0"
-"WaitToKillAppTimeout"="5000"
-"HungAppTimeout"="4000"
 "AutoEndTasks"="1"
-"LowLevelHooksTimeout"=dword:00001000
+"ForegroundLockTimeout"=dword:000249f0
+"HungAppTimeout"="100"
+"LowLevelHooksTimeout"="1000"
+"MenuShowDelay"="0"
+"WaitToKillAppTimeout"="300"
 "WaitToKillServiceTimeout"=dword:00002000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\943c8cb6-6f93-4227-ad87-e9a3feec08d1]
