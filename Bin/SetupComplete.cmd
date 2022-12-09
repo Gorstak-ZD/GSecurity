@@ -437,10 +437,15 @@ echo 0.0.0.0 pagead-googlehosted.l.google.com
 )>"%systemdrive%\Windows\System32\Drivers\Etc\hosts"
 
 :: Registry
+Reg.exe import %~dp0Browsers.reg
+Reg.exe import %~dp0DeviceRestrictions.reg
 Reg.exe import %~dp0GSecurity.reg
-Reg.exe import %~dp0HKLM.reg
+Reg.exe import %~dp0Hid.reg
 Reg.exe import %~dp0HKCU.reg
+Reg.exe import %~dp0HKLM.reg
 Reg.exe import %~dp0Services.reg
+Reg.exe import %~dp0SysHardener.reg
+Reg.exe import %~dp0WebControl.reg
 
 :: Title
 Title GCleaner & color 0b
