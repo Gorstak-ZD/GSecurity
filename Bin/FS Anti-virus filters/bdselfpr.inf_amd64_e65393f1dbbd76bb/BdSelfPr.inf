@@ -1,0 +1,91 @@
+;;;
+;;; BDSELFPR.SYS inf file
+;;;
+;;; Copyright (C) 2007-2012 BITDEFENDER S.R.L.
+;;;
+
+[Version]
+signature   = "$Windows NT$"
+Class       = "AntiVirus"                               ;This is determined by the work this filter driver does
+ClassGuid   = {b1d1a169-c54f-4379-81db-bee7d88d7454}    ;This value is determined by the Class
+Provider    = %BitDefender%
+DriverVer   = 07/26/2013,2.0.0.36
+CatalogFile = bdselfpr.cat
+
+[DestinationDirs]
+DefaultDestDir          = 12
+HIPS.DriverFiles         = 12           ;%windir%\system32\drivers
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall.NTx86]
+OptionDesc          = %ServiceDesc%
+CopyFiles           = HIPS.DriverFiles
+
+[DefaultInstall.NTx86.Services]
+AddService          = %ServiceName%,,HIPS.Service
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall.NTx86]
+DelFiles   = HIPS.DriverFiles
+DelReg     = HIPS.DelRegistry
+
+[DefaultUninstall.NTx86.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deleting
+
+
+;;
+;; Services Section
+;;
+
+[HIPS.Service]
+DisplayName      = %ServiceName%
+Description      = %ServiceDesc%
+ServiceBinary    = %12%\bdselfpr.sys			;%windir%\system32\drivers\
+ServiceType      = 1							;SERVICE_KERNEL_DRIVER
+StartType        = 1							;SERVICE_SYSTEM_START
+ErrorControl     = 1							;SERVICE_ERROR_NORMAL
+AddReg           = HIPS.AddRegistry
+
+;;
+;; Registry Modifications
+;;
+
+[HIPS.AddRegistry]
+
+HKR,"Enum",,0x00000010,
+HKR,,"Protects",0x00010000,""
+HKR,,"Excludes",0x00010000,""
+
+[HIPS.DelRegistry]
+
+HKR,Parameters,,0x00002000						;0x00002000 FLG_DELREG_KEYONLY_COMMON
+
+;;
+;; Copy Files
+;;
+[HIPS.DriverFiles]
+bdselfpr.sys
+
+;;
+;; SourceDiskNames / SourceDisksFiles
+;;
+[SourceDisksNames]
+1 = "BitDefender Hips"
+
+[SourceDisksFiles]
+bdselfpr.sys = 1
+
+;;
+;; String Section
+;;
+
+[Strings]
+BitDefender         = "BITDEFENDER S.R.L."
+ServiceDesc         = "Bitdefender HIPS Driver"
+ServiceName         = "bdselfpr"
+VersionStr          = "2.0.0.36"
