@@ -128,7 +128,7 @@ echo ff00::0 ip6-mcastprefix
 echo ff02::1 ip6-allnodes
 echo ff02::2 ip6-allrouters
 echo ff02::3 ip6-allhosts
-echo 0.0.0.0 echo 0.0.0.0
+echo 0.0.0.0 0.0.0.0
 echo # This is a list of the most popular ads companies blocked
 echo 0.0.0.0 adtago.s3.amazonaws.com
 echo 0.0.0.0 analyticsengine.s3.amazonaws.com
