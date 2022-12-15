@@ -73,6 +73,7 @@ icacls b: /remove "Authenticated Users"
 icacls b: /remove "Everyone"
 
 takeown /f c:
+icacls c: /inheritance:e /grant:r "%username%":(OI)(CI)F
 icacls c: /inheritance:e /grant:r "CONSOLE LOGON":(OI)(CI)F
 icacls c: /remove "Authenticated Users"
 icacls c: /remove "Users"
