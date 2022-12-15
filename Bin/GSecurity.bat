@@ -231,10 +231,10 @@ icacls z: /remove "Everyone"
 :: Remove Pester
 takeown /f "%ProgramFiles%\WindowsPowerShell" /r /d y
 icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:r /grant:r "%username%":(OI)(CI)F /t /l /q /c
-rd "%ProgramFiles%\WindowsPowerShell" /s /q
+rd /s /q "%ProgramFiles%\WindowsPowerShell"
 takeown /f "%ProgramFiles(x86)%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles(x86)%\WindowsPowerShell" /grant:r "%username%":(OI)(CI)F /t /l /q /c
-rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
+icacls "%ProgramFiles(x86)%\WindowsPowerShell" /inheritance:r /grant:r "%username%":(OI)(CI)F /t /l /q /c
+rd /s /q "%ProgramFiles(x86)%\WindowsPowerShell"
 
 :: Block logons
 takeown /f %SystemDrive%\Windows\System32\winlogon.exe
@@ -257,10 +257,10 @@ icacls "%SystemDrive%\Windows\System32\logonui.exe" /deny "Network":F
 :: Take ownership of Desktop
 takeown /f "%SystemDrive%\Users\Public\Desktop" /r /d y
 icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
-icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r "%username%":(OI)(CI)F /t /l /q /c
+icacls "%SystemDrive%\Users\Public\Desktop" /grant:r "%username%":(OI)(CI)F /t /l /q /c
 takeown /f "%USERPROFILE%\Desktop" /r /d y
 icacls "%USERPROFILE%\Desktop" /inheritance:r
-icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r "%username%":(OI)(CI)F /t /l /q /c
+icacls "%USERPROFILE%\Desktop" /grant:r "%username%":(OI)(CI)F /t /l /q /c
 
 :: Pagefile
 wmic computersystem where name="%computername%" set AutomaticManagedPagefile=True
