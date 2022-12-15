@@ -29,44 +29,38 @@ rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
 
 :: Block logons
 takeown /f %SystemDrive%\Windows\System32\winlogon.exe
-icacls %SystemDrive%\Windows\System32\winlogon.exe /remove "All Application Packages"
-icacls %SystemDrive%\Windows\System32\winlogon.exe /remove "All Restricted Application Packages"
-icacls %SystemDrive%\Windows\System32\winlogon.exe /remove "Authenticated Users"
-icacls %SystemDrive%\Windows\System32\winlogon.exe /remove Users
-icacls %SystemDrive%\Windows\System32\winlogon.exe /remove TrustedInstaller
-icacls %SystemDrive%\Windows\System32\winlogon.exe /deny Network:F
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /inheritance:d
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "All Application Packages"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "All Restricted Application Packages"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "Authenticated Users"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "Users"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "TrustedInstaller"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /deny "Network":F
 takeown /f %SystemDrive%\Windows\System32\logonui.exe
-icacls %SystemDrive%\Windows\System32\logonui.exe /remove "All Application Packages"
-icacls %SystemDrive%\Windows\System32\logonui.exe /remove "All Restricted Application Packages"
-icacls %SystemDrive%\Windows\System32\logonui.exe /remove "Authenticated Users"
-icacls %SystemDrive%\Windows\System32\logonui.exe /remove Users
-icacls %SystemDrive%\Windows\System32\logonui.exe /remove TrustedInstaller
-icacls %SystemDrive%\Windows\System32\logonui.exe /deny Network:F
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /inheritance:d
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "All Application Packages"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "All Restricted Application Packages"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "Authenticated Users"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "Users"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "TrustedInstaller"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /deny "Network":F
 
-:: Disable spying on users and causing mental issues to users
-sc stop LanmanWorkstation
-sc stop LanmanServer
-sc stop seclogon
-sc config LanmanWorkstation start= disabled
-sc config LanmanServer start= disabled
-sc config seclogon Start= disabled
-
-:: Disable deployed group policies
-sc stop AppMgmt
-sc config AppMgmt start= disabled
-
-:: Disable ipv6
-sc stop iphlpsvc
-sc config iphlpsvc start= disabled
+:: Take ownership of Desktop
+takeown /f "%SystemDrive%\Users\Public\Desktop" /r /d y
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
+takeown /f "%USERPROFILE%\Desktop" /r /d y
+icacls "%USERPROFILE%\Desktop" /inheritance:r
+icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
 
 :: Pagefile
 wmic computersystem where name="%computername%" set AutomaticManagedPagefile=True
 
 :: Hosts
 (
-# GSecurity
+echo # GSecurity
 echo 0.0.0.0 url1
-# Steven Black suggested
+echo # Steven Black suggested
 echo 127.0.0.1 localhost
 echo 127.0.0.1 localhost.localdomain
 echo 127.0.0.1 local
@@ -81,7 +75,7 @@ echo ff02::1 ip6-allnodes
 echo ff02::2 ip6-allrouters
 echo ff02::3 ip6-allhosts
 echo 0.0.0.0 echo 0.0.0.0
-# this is a list of the most popular ads companies blocked
+echo # this is a list of the most popular ads companies blocked
 echo 0.0.0.0 adtago.s3.amazonaws.com
 echo 0.0.0.0 analyticsengine.s3.amazonaws.com
 echo 0.0.0.0 advice-ads.s3.amazonaws.com
@@ -211,7 +205,7 @@ echo 0.0.0.0 analytics.tiktok.com
 echo 0.0.0.0 ads.tiktok.com
 echo 0.0.0.0 analytics-sg.tiktok.com
 echo 0.0.0.0 ads-sg.tiktok.com
-# Advanced System Care 15 Ultimate
+echo # Advanced System Care 15 Ultimate
 echo 0.0.0.0 184-86-53-99.deploy.static.akamaitechnologies.com
 echo 0.0.0.0 a-0001.a-msedge.net
 echo 0.0.0.0 a-0002.a-msedge.net
@@ -351,7 +345,7 @@ echo 0.0.0.0 c.msn.com
 echo 0.0.0.0 pricelist.skype.com
 echo 0.0.0.0 s.gateway.messenger.live.com
 echo 0.0.0.0 ui.skype.com
-# Google Ads Block
+echo # Google Ads Block
 echo 0.0.0.0 auditude.com
 echo 0.0.0.0 ad.auditude.com
 echo 0.0.0.0 adservice.google.com
@@ -401,11 +395,10 @@ echo 0.0.0.0 pagead-googlehosted.l.google.com
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0optimize-user-interface.ps1"
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0optimize-windows-update.ps1"
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0remove-default-apps.ps1"
+@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0Win10.ps1" -include "%~dp0Win10.psm1" -preset "%~dpn0.preset"
 
 :: Batch Scripts
-call Default.cmd
 call RemoveServices.bat
-call "Windows Auto Configure.cmd"
 
 :: Exit
-Reg.exe import %~dp0GSecurity.reg
+exit
