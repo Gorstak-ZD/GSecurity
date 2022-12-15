@@ -19,40 +19,6 @@ Reg.exe add "HKLM\software\policies\microsoft\Windows\WinRM\Service\WinRS" /v "A
 Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\windows nt\terminal services" /v "fDenyTSConnections" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\windows nt\terminal services" /v "DenyTSConnections" /t REG_DWORD /d "1" /f
 
-:: Remove Pester
-takeown /f "%ProgramFiles%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:r /grant:r "%username%":(OI)(CI)F /t /l /q /c
-rd "%ProgramFiles%\WindowsPowerShell" /s /q
-takeown /f "%ProgramFiles(x86)%\WindowsPowerShell" /r /d y
-icacls "%ProgramFiles(x86)%\WindowsPowerShell" /grant:r "%username%":(OI)(CI)F /t /l /q /c
-rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
-
-:: Block logons
-takeown /f %SystemDrive%\Windows\System32\winlogon.exe
-icacls "%SystemDrive%\Windows\System32\winlogon.exe" /inheritance:d
-icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "All Application Packages"
-icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "All Restricted Application Packages"
-icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "Authenticated Users"
-icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "Users"
-icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "TrustedInstaller"
-icacls "%SystemDrive%\Windows\System32\winlogon.exe" /deny "Network":F
-takeown /f %SystemDrive%\Windows\System32\logonui.exe
-icacls "%SystemDrive%\Windows\System32\logonui.exe" /inheritance:d
-icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "All Application Packages"
-icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "All Restricted Application Packages"
-icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "Authenticated Users"
-icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "Users"
-icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "TrustedInstaller"
-icacls "%SystemDrive%\Windows\System32\logonui.exe" /deny "Network":F
-
-:: Take ownership of Desktop
-takeown /f "%SystemDrive%\Users\Public\Desktop" /r /d y
-icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
-icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r "%username%":(OI)(CI)F /t /l /q /c
-takeown /f "%USERPROFILE%\Desktop" /r /d y
-icacls "%USERPROFILE%\Desktop" /inheritance:r
-icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r "%username%":(OI)(CI)F /t /l /q /c
-
 :: Perms
 c:
 cd\
@@ -261,6 +227,40 @@ icacls z: /inheritance:e /grant:r System:(OI)(CI)F
 icacls z: /remove "Users"
 icacls z: /remove "Authenticated Users"
 icacls z: /remove "Everyone"
+
+:: Remove Pester
+takeown /f "%ProgramFiles%\WindowsPowerShell" /r /d y
+icacls "%ProgramFiles%\WindowsPowerShell" /inheritance:r /grant:r "%username%":(OI)(CI)F /t /l /q /c
+rd "%ProgramFiles%\WindowsPowerShell" /s /q
+takeown /f "%ProgramFiles(x86)%\WindowsPowerShell" /r /d y
+icacls "%ProgramFiles(x86)%\WindowsPowerShell" /grant:r "%username%":(OI)(CI)F /t /l /q /c
+rd "%ProgramFiles(x86)%\WindowsPowerShell" /s /q
+
+:: Block logons
+takeown /f %SystemDrive%\Windows\System32\winlogon.exe
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /inheritance:d
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "All Application Packages"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "All Restricted Application Packages"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "Authenticated Users"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "Users"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /remove "TrustedInstaller"
+icacls "%SystemDrive%\Windows\System32\winlogon.exe" /deny "Network":F
+takeown /f %SystemDrive%\Windows\System32\logonui.exe
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /inheritance:d
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "All Application Packages"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "All Restricted Application Packages"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "Authenticated Users"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "Users"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /remove "TrustedInstaller"
+icacls "%SystemDrive%\Windows\System32\logonui.exe" /deny "Network":F
+
+:: Take ownership of Desktop
+takeown /f "%SystemDrive%\Users\Public\Desktop" /r /d y
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:r
+icacls "%SystemDrive%\Users\Public\Desktop" /inheritance:e /grant:r "%username%":(OI)(CI)F /t /l /q /c
+takeown /f "%USERPROFILE%\Desktop" /r /d y
+icacls "%USERPROFILE%\Desktop" /inheritance:r
+icacls "%USERPROFILE%\Desktop" /inheritance:e /grant:r "%username%":(OI)(CI)F /t /l /q /c
 
 :: Pagefile
 wmic computersystem where name="%computername%" set AutomaticManagedPagefile=True
