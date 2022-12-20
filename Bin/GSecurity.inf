@@ -45,7 +45,7 @@ MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableUIADeskt
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableVirtualization=4,1
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeCaption=1,""
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\LegalNoticeText=7,
-MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\PromptOnSecureDesktop=4,0
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\PromptOnSecureDesktop=4,1
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ScForceOption=4,0
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ShutdownWithoutLogon=4,1
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\UndockWithoutLogon=4,1
@@ -53,7 +53,7 @@ MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ValidateAdminC
 MACHINE\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\AuthenticodeEnabled=4,0
 MACHINE\System\CurrentControlSet\Control\Lsa\AuditBaseObjects=4,0
 MACHINE\System\CurrentControlSet\Control\Lsa\CrashOnAuditFail=4,0
-MACHINE\System\CurrentControlSet\Control\Lsa\DisableDomainCreds=4,0
+MACHINE\System\CurrentControlSet\Control\Lsa\DisableDomainCreds=4,1
 MACHINE\System\CurrentControlSet\Control\Lsa\EveryoneIncludesAnonymous=4,0
 MACHINE\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy\Enabled=4,0
 MACHINE\System\CurrentControlSet\Control\Lsa\ForceGuest=4,0
