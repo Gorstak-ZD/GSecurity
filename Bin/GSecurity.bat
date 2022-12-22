@@ -562,22 +562,5 @@ echo 0.0.0.0 static.doubleclick.net
 echo 0.0.0.0 pagead-googlehosted.l.google.com
 )>"%systemdrive%\Windows\System32\Drivers\Etc\hosts"
 
-:: Powershell Scripts
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0block-telemetry.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0disable-memory-compression.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0disable-prefetch-prelaunch.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0disable-scheduled-tasks.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0disable-services.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0disable-windows-defender.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0experimental_unfuckery.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0fix-privacy-settings.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0optimize-user-interface.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0optimize-windows-update.ps1"
-@powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0remove-default-apps.ps1"
-
-:: Batch Scripts
-call %~dp0Default.cmd
-call %~dp0RemoveServices.bat
-
 :: Exit
 exit
