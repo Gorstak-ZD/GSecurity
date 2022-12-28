@@ -11,6 +11,9 @@ lgpo.exe /s GSecurity.inf
 :: Registry
 Reg.exe import GSecurity.reg
 
+:: Firewall cleanup
+netsh advfirewall firewall delete rule name=all
+
 :: Provisioning
 rd /s /q %ProgramData%\Microsoft\Provisioning
 @powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Uninstall-ProvisioningPackage -AllInstalledPackages"
