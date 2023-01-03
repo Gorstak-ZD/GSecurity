@@ -1,0 +1,815 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\MicrosoftEdge]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\MicrosoftEdge\Main]
+@=""
+"AllowPrelaunch"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\CA]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\CA\Certificates]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\CA\CRLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\CA\CTLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\Disallowed]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\Disallowed\Certificates]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\Disallowed\CRLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\Disallowed\CTLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\trust]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\trust\Certificates]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\trust\CRLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\trust\CTLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\TrustedPeople]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\TrustedPeople\Certificates]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\TrustedPeople\CRLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\SystemCertificates\TrustedPeople\CTLs]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\5.0]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Cache]
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Psched]
+"NonBestEfforLimit"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Windows Error Reporting]
+"LoggingDisabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Power]
+
+[HKEY_CURRENT_USER\Software\Policies\Power\PowerSettings]
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop]
+"NoAddingComponents"=dword:00000001
+"NoComponents"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"ScanWithAntiVirus"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"ForceActiveDesktopOn"=dword:00000000
+"NoActiveDesktop"=dword:00000001
+"NoActiveDesktopChanges"=dword:00000001
+"LinkResolveIgnoreLinkInfo"=dword:00000001
+"NoInternetOpenWith"=dword:00000001
+"NoLowDiskSpaceChecks"=dword:00000001
+"NoResolveSearch"=dword:00000001
+"NoResolveTrack"=dword:00000001
+"SettingsPageVisibility"="hide:maps;cortana-moredetails;cortana-language;cortana-notifications;cortana-permissions;cortana;cortana-talktocortana;holographic-audio"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\NonEnum]
+"{0DF44EAA-FF21-4412-828E-260A8728E7F1}"=dword:00000020
+"{6DFD7C5C-2451-11d3-A299-00C04F8EF6AF}"=dword:40000021
+"{BDEADF00-C265-11D0-BCED-00A0C90AB50F}"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"ConsentPromptBehaviorUser"=dword:00000003
+"DSCAutomationHostEnabled"=dword:00000002
+"EnableCursorSuppression"=dword:00000001
+"EnableFullTrustStartupTasks"=dword:00000002
+"EnableInstallerDetection"=dword:00000001
+"EnableLUA"=dword:00000000
+"EnableSecureUIAPaths"=dword:00000001
+"EnableUIADesktopToggle"=dword:00000000
+"EnableUwpStartupTasks"=dword:00000002
+"EnableVirtualization"=dword:00000001
+"PromptOnSecureDesktop"=dword:00000000
+"SupportFullTrustStartupTasks"=dword:00000001
+"SupportUwpStartupTasks"=dword:00000001
+"ValidateAdminCodeSignatures"=dword:00000000
+"EnableLinkedConnections"=dword:00000001
+"dontdisplaylastusername"=dword:00000000
+"legalnoticecaption"=""
+"legalnoticetext"=""
+"scforceoption"=dword:00000000
+"shutdownwithoutlogon"=dword:00000001
+"undockwithoutlogon"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Audit]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\UIPI]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\UIPI\Clipboard]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\UIPI\Clipboard\ExceptionFormats]
+"CF_BITMAP"=dword:00000002
+"CF_DIB"=dword:00000008
+"CF_DIBV5"=dword:00000011
+"CF_OEMTEXT"=dword:00000007
+"CF_PALETTE"=dword:00000009
+"CF_TEXT"=dword:00000001
+"CF_UNICODETEXT"=dword:0000000d
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Dsh]
+"AllowNewsAndInterests"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+@=""
+"AllowPrelaunch"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PeerDist]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Peernet]
+"Disabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\CA]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\CA\Certificates]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\CA\CRLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\CA\CTLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed\Certificates]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed\CRLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Disallowed\CTLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Root]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\CRLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\CTLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\trust]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\trust\Certificates]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\trust\CRLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\trust\CTLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\TrustedPeople]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\TrustedPeople\Certificates]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\TrustedPeople\CRLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\TrustedPeople\CTLs]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\TPM]
+"OSManagedAuthLevel"=dword:00000005
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Appx]
+"MdmHosts"="^(?:[^\\/]*)\\.MANAGE[^\\.]*\\.(MICROSOFT\\.(COM|US)|MICROSOFTONLINE\\.CN)$"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+@=""
+"DisableWindowsConsumerFeatures"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings]
+"CallLegacyWCMPolicies"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Cache]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EnhancedStorageDevices]
+"TCGSecurityActivationDisabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoUseStoreOpenWith"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\IPSec]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\IPSec\Policy]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Network Connections]
+"NC_PersonalFirewallConfig"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers]
+"authenticodeenabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SettingSync]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"DisableAcrylicBackgroundOnLogon"=dword:00000001
+"EnableSmartScreen"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TenantRestrictions]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TenantRestrictions\Payload]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TenantRestrictions\Payload\PreventPolicyKeyDelete]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\GroupPolicy]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\Local]
+"WCMPresent"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"TargetReleaseVersion"=dword:00000001
+"ProductVersion"="Windows 11"
+"TargetReleaseVersionInfo"="22H2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WSDAPI]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WSDAPI\Discovery Proxies]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\Client]
+"fEnableUsbBlockDeviceBySetupClass"=dword:00000001
+"fEnableUsbNoAckIsochWriteToDevice"=dword:00000050
+"fEnableUsbSelectDeviceByInterface"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\Client\UsbBlockDeviceBySetupClasses]
+"1000"="{3376f4ce-ff8d-40a2-a80f-bb4359d1415c}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\Client\UsbSelectDeviceByInterfaces]
+"1000"="{6bdd1fc6-810f-11d0-bec7-08002be2092f}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Windows File Protection]
+"KnownDllList"="nlhtml.dll"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
+"AllowWindowsInkWorkspace"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsMediaPlayer]
+"GroupPrivacyAcceptance"=dword:00000001
+
+
+
+#~ ActiveX Installer (AxInstSV)
+#~ Provides User Account Control validation for the installation of ActiveX controls from the Internet and enables management of ActiveX control installation based on Group Policy settings. This service is started on demand and if disabled the installation of ActiveX controls will behave according to default browser settings. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AxInstSV]
+"Start"=dword:00000003
+
+#~ AllJoyn Router Service
+#~ Routes AllJoyn messages for the local AllJoyn clients. If this service is stopped the AllJoyn clients that do not have their own bundled routers will be unable to run. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AJRouter]
+"Start"=dword:00000003
+
+#~ App Readiness
+#~ Gets apps ready for use the first time a user signs in to this PC and when adding new apps. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppReadiness]
+"Start"=dword:00000003
+
+#~ Application Identity
+#~ Determines and verifies the identity of an application. Disabling this service will prevent AppLocker from being enforced. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppIDSvc]
+"Start"=dword:00000003
+
+#~ Application Layer Gateway Service
+#~ Provides support for 3rd party protocol plug-ins for Internet Connection Sharing 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ALG]
+"Start"=dword:00000004
+
+#~ Application Management
+#~ Processes installation, removal, and enumeration requests for software deployed through Group Policy. If the service is disabled, users will be unable to install, remove, or enumerate software deployed through Group Policy. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppMgmt]
+"Start"=dword:00000003
+
+#~ AVCTP service
+#~ This is Audio Video Control Transport Protocol service 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthAvctpSvc]
+"Start"=dword:00000003
+
+#~ BitLocker Drive Encryption Service
+#~ BDESVC hosts the BitLocker Drive Encryption service. BitLocker Drive Encryption provides secure startup for the operating system, as well as full volume encryption for OS, fixed or removable volumes. This service allows BitLocker to prompt users for various actions related to their volumes when mounted, and unlocks volumes automatically without user interaction. Additionally, it stores recovery information to Active Directory, if available, and, if necessary, ensures the most recent recovery certificates are used.  Stopping or disabling the service would prevent users from leveraging this functionality. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BDESVC]
+"Start"=dword:00000003
+
+#~ Block Level Backup Engine Service
+#~ The WBENGINE service is used by Windows Backup to perform backup and recovery operations. If this service is stopped by a user, it may cause the currently running backup or recovery operation to fail. Disabling this service may disable backup and recovery operations using Windows Backup on this computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wbengine]
+"Start"=dword:00000003
+
+#~ Bluetooth Audio Gateway Service
+#~ Service supporting the audio gateway role of the Bluetooth Handsfree Profile. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTAGService]
+"Start"=dword:00000003
+
+#~ Bluetooth Support Service
+#~ The Bluetooth service supports discovery and association of remote Bluetooth devices.  Stopping or disabling this service may cause already installed Bluetooth devices to fail to operate properly and prevent new devices from being discovered or associated. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bthserv]
+#~ "Start"=dword:00000003
+
+#~ Bluetooth User Support Service
+#~ The Bluetooth user service supports proper functionality of Bluetooth features relevant to each user session. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BluetoothUserService]
+"Start"=dword:00000003
+
+#~ BranchCache
+#~ This service caches network content from peers on the local subnet. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PeerDistSvc]
+"Start"=dword:00000004
+
+#~ Capability Access Manager Service
+#~ Provides facilities for managing UWP apps access to app capabilities as well as checking an app's access to specific app capabilities 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\camsvc]
+"Start"=dword:00000003
+
+#~ Certificate Propagation
+#~ Copies user certificates and root certificates from smart cards into the current user's certificate store, detects when a smart card is inserted into a smart card reader, and, if needed, installs the smart card Plug and Play minidriver. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CertPropSvc]
+"Start"=dword:00000003
+
+#~ Client License Service (ClipSVC)
+#~ Provides infrastructure support for the Microsoft Store. This service is started on demand and if disabled applications bought using Windows Store will not behave correctly. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC]
+"Start"=dword:00000003
+
+#~ CNG Key Isolation
+#~ The CNG key isolation service is hosted in the LSA process. The service provides key process isolation to private keys and associated cryptographic operations as required by the Common Criteria. The service stores and uses long-lived keys in a secure process complying with Common Criteria requirements. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KeyIso]
+#~ "Start"=dword:00000003
+
+#~ COM+ System Application
+#~ Manages the configuration and tracking of Component Object Model (COM)+-based components. If the service is stopped, most COM+-based components will not function properly. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\COMSysApp]
+"Start"=dword:00000003
+
+#~ Contact Data
+#~ Indexes contact data for fast contact searching. If you stop or disable this service, contacts might be missing from your search results. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PimIndexMaintenanceSvc]
+"Start"=dword:00000003
+
+#~ Credential Manager
+#~ Provides secure storage and retrieval of credentials to users, applications and security service packages. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VaultSvc]
+"Start"=dword:00000003
+
+#~ Data Sharing Service
+#~ Provides data brokering between applications. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DsSvc]
+"Start"=dword:00000003
+
+#~ Device Association Service
+#~ Enables pairing between the system and wired or wireless devices. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DeviceAssociationService]
+"Start"=dword:00000003
+
+#~ Device Install Service
+#~ Enables a computer to recognize and adapt to hardware changes with little or no user input. Stopping or disabling this service will result in system instability. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DeviceInstall]
+"Start"=dword:00000003
+
+#~ Device Management Enrollment Service
+#~ Performs Device Enrollment Activities for Device Management 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DmEnrollmentSvc]
+"Start"=dword:00000003
+
+#~ Device Setup Manager
+#~ Enables the detection, download and installation of device-related software. If this service is disabled, devices may be configured with outdated software, and may not work correctly. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DsmSVC]
+"Start"=dword:00000003
+
+#~ DevicePicker
+#~ This user service is used for managing the Miracast, DLNA, and DIAL UI 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DevicePickerUserSvc]
+"Start"=dword:00000003
+
+#~ DevicesFlow
+#~ Allows ConnectUX and PC Settings to Connect and Pair with WiFi displays and Bluetooth devices. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DevicesFlowUserSvc]
+"Start"=dword:00000003
+
+#~ DevQuery Background Discovery Broker
+#~ Enables apps to discover devices with a backgroud task 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DevQueryBroker]
+"Start"=dword:00000003
+
+#~ Diagnostic Execution Service
+#~ Executes diagnostic actions for troubleshooting support 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagsvc]
+"Start"=dword:00000003
+
+#~ Diagnostic Service Host
+#~ The Diagnostic Service Host is used by the Diagnostic Policy Service to host diagnostics that need to run in a Local Service context.  If this service is stopped, any diagnostics that depend on it will no longer function. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiServiceHost]
+"Start"=dword:00000003
+
+#~ Diagnostic System Host
+#~ The Diagnostic System Host is used by the Diagnostic Policy Service to host diagnostics that need to run in a Local System context.  If this service is stopped, any diagnostics that depend on it will no longer function. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiSystemHost]
+"Start"=dword:00000003
+
+#~ Distributed Transaction Coordinator
+#~ Coordinates transactions that span multiple resource managers, such as databases, message queues, and file systems. If this service is stopped, these transactions will fail. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC]
+"Start"=dword:00000003
+
+#~ Downloaded Maps Manager
+#~ Windows service for application access to downloaded maps. This service is started on-demand by application accessing downloaded maps. Disabling this service will prevent apps from accessing maps. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MapsBroker]
+"Start"=dword:00000004
+
+#~ Embedded Mode
+#~ The Embedded Mode service enables scenarios related to Background Applications.  Disabling this service will prevent Background Applications from being activated. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\embeddedmode]
+"Start"=dword:00000003
+
+#~ Encrypting File System (EFS)
+#~ Provides the core file encryption technology used to store encrypted files on NTFS file system volumes. If this service is stopped or disabled, applications will be unable to access encrypted files. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EFS]
+"Start"=dword:00000003
+
+#~ Enterprise App Management Service
+#~ Enables enterprise application management. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EntAppSvc]
+"Start"=dword:00000003
+
+#~ Extensible Authentication Protocol
+#~ The Extensible Authentication Protocol (EAP) service provides network authentication in such scenarios as 802.1x wired and wireless, VPN, and Network Access Protection (NAP).  EAP also provides application programming interfaces (APIs) that are used by network access clients, including wireless and VPN clients, during the authentication process.  If you disable this service, this computer is prevented from accessing networks that require EAP authentication. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EapHost]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fax]
+"Start"=dword:00000004
+
+#~ File History Service
+#~ Protects user files from accidental loss by copying them to a backup location 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\fhsvc]
+"Start"=dword:00000003
+
+#~ Function Discovery Provider Host
+#~ The FDPHOST service hosts the Function Discovery (FD) network discovery providers. These FD providers supply network discovery services for the Simple Services Discovery Protocol (SSDP) and Web Services – Discovery (WS-D) protocol. Stopping or disabling the FDPHOST service will disable network discovery for these protocols when using FD. When this service is unavailable, network services using FD and relying on these discovery protocols will be unable to find network devices or resources. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\fdPHost]
+"Start"=dword:00000003
+
+#~ Function Discovery Resource Publication
+#~ Publishes this computer and resources attached to this computer so they can be discovered over the network.  If this service is stopped, network resources will no longer be published and they will not be discovered by other computers on the network. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FDResPub]
+"Start"=dword:00000003
+
+#~ GameDVR and Broadcast User Service
+#~ This user service is used for Game Recordings and Live Broadcasts 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BcastDVRUserService]
+"Start"=dword:00000003
+
+#~ Geolocation Service
+#~ This service monitors the current location of the system and manages geofences (a geographical location with associated events).  If you turn off this service, applications will be unable to use or receive notifications for geolocation or geofences. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc]
+"Start"=dword:00000004
+
+#~ GraphicsPerfSvc
+#~ Graphics performance monitor service 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc]
+"Start"=dword:00000003
+
+#~ HV Host Service
+#~ Provides an interface for the Hyper-V hypervisor to provide per-partition performance counters to the host operating system. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HvHost]
+"Start"=dword:00000004
+
+#~ Hyper-V Data Exchange Service
+#~ Provides a mechanism to exchange data between the virtual machine and the operating system running on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmickvpexchange]
+"Start"=dword:00000004
+
+#~ Hyper-V Guest Service Interface
+#~ Provides an interface for the Hyper-V host to interact with specific services running inside the virtual machine. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicguestinterface]
+"Start"=dword:00000004
+
+#~ Hyper-V Guest Shutdown Service
+#~ Provides a mechanism to shut down the operating system of this virtual machine from the management interfaces on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicshutdown]
+"Start"=dword:00000004
+
+#~ Hyper-V Heartbeat Service
+#~ Monitors the state of this virtual machine by reporting a heartbeat at regular intervals. This service helps you identify running virtual machines that have stopped responding. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicheartbeat]
+"Start"=dword:00000004
+
+#~ Hyper-V PowerShell Direct Service
+#~ Provides a mechanism to manage virtual machine with PowerShell via VM session without a virtual network. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicvmsession]
+"Start"=dword:00000004
+
+#~ Hyper-V Remote Desktop Virtualization Service
+#~ Provides a platform for communication between the virtual machine and the operating system running on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicrdv]
+"Start"=dword:00000004
+
+#~ Hyper-V Time Synchronization Service
+#~ Synchronizes the system time of this virtual machine with the system time of the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmictimesync]
+"Start"=dword:00000004
+
+#~ Hyper-V Volume Shadow Copy Requestor
+#~ Coordinates the communications that are required to use Volume Shadow Copy Service to back up applications and data on this virtual machine from the operating system on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicvss]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\irmon]
+"Start"=dword:00000004
+
+#~ Internet Connection Sharing (ICS)
+#~ Provides network address translation, addressing, name resolution and/or intrusion prevention services for a home or small office network. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess]
+"Start"=dword:00000004
+
+#~ IP Helper
+#~ Provides tunnel connectivity using IPv6 transition technologies (6to4, ISATAP, Port Proxy, and Teredo), and IP-HTTPS. If this service is stopped, the computer will not have the enhanced connectivity benefits that these technologies offer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\iphlpsvc]
+"Start"=dword:00000002
+
+#~ IP Translation Configuration Service
+#~ Configures and enables translation from v4 to v6 and vice versa 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IpxlatCfgSvc]
+"Start"=dword:00000003
+
+#~ Microsoft App-V Client
+#~ Manages App-V users and virtual applications 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppVClient]
+"Start"=dword:00000004
+
+#~ Microsoft iSCSI Initiator Service
+#~ Manages Internet SCSI (iSCSI) sessions from this computer to remote iSCSI target devices. If this service is stopped, this computer will not be able to login or access iSCSI targets. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSiSCSI]
+"Start"=dword:00000004
+
+#~ Microsoft Windows SMS Router Service.
+#~ Routes messages based on rules to appropriate clients. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SmsRouter]
+"Start"=dword:00000004
+
+#~ Natural Authentication
+#~ Signal aggregator service, that evaluates signals based on time, network, geolocation, bluetooth and cdf factors. Supported features are Device Unlock, Dynamic Lock and Dynamo MDM policies 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NaturalAuthentication]
+"Start"=dword:00000003
+
+#~ Net.Tcp Port Sharing Service
+#~ Provides ability to share TCP ports over the net.tcp protocol. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetTcpPortSharing]
+"Start"=dword:00000004
+
+#~ Netlogon
+#~ Maintains a secure channel between this computer and the domain controller for authenticating users and services. If this service is stopped, the computer may not authenticate users and services and the domain controller cannot register DNS records. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon]
+"Start"=dword:00000003
+
+#~ Network Connected Devices Auto-Setup
+#~ Network Connected Devices Auto-Setup service monitors and installs qualified devices that connect to a qualified network. Stopping or disabling this service will prevent Windows from discovering and installing qualified network connected devices automatically. Users can still manually add network connected devices to a PC through the user interface. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NcdAutoSetup]
+"Start"=dword:00000003
+
+#~ Offline Files
+#~ The Offline Files service performs maintenance activities on the Offline Files cache, responds to user logon and logoff events, implements the internals of the public API, and dispatches interesting events to those interested in Offline Files activities and changes in cache state. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CscService]
+"Start"=dword:00000004
+
+#~ Parental Controls
+#~ Enforces parental controls for child accounts in Windows. If this service is stopped or disabled, parental controls may not be enforced. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WpcMonSvc]
+"Start"=dword:00000004
+
+#~ Payments and NFC/SE Manager
+#~ Manages payments and Near Field Communication (NFC) based secure elements. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SEMgrSvc]
+"Start"=dword:00000004
+
+#~ Phone Service
+#~ Manages the telephony state on the device 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PhoneSvc]
+"Start"=dword:00000004
+
+#~ Remote Desktop Configuration
+#~ Remote Desktop Configuration service (RDCS) is responsible for all Remote Desktop Services and Remote Desktop related configuration and session maintenance activities that require SYSTEM context. These include per-session temporary folders, RD themes, and RD certificates. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SessionEnv]
+"Start"=dword:00000003
+
+#~ Remote Desktop Services
+#~ Allows users to connect interactively to a remote computer. Remote Desktop and Remote Desktop Session Host Server depend on this service.  To prevent remote use of this computer, clear the checkboxes on the Remote tab of the System properties control panel item. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService]
+"Start"=dword:00000003
+
+#~ Remote Desktop Services UserMode Port Redirector
+#~ Allows the redirection of Printers/Drives/Ports for RDP connections 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UmRdpService]
+"Start"=dword:00000003
+
+#~ Remote Procedure Call (RPC) Locator
+#~ In Windows 2003 and earlier versions of Windows, the Remote Procedure Call (RPC) Locator service manages the RPC name service database. In Windows Vista and later versions of Windows, this service does not provide any functionality and is present for application compatibility. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RpcLocator]
+"Start"=dword:00000004
+
+#~ Remote Registry
+#~ Enables remote users to modify registry settings on this computer. If this service is stopped, the registry can be modified only by users on this computer. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry]
+"Start"=dword:00000004
+
+#~ Retail Demo Service
+#~ The Retail Demo service controls device activity while the device is in retail demo mode. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RetailDemo]
+"Start"=dword:00000004
+
+#~ Routing and Remote Access
+#~ Offers routing services to businesses in local area and wide area network environments. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteAccess]
+"Start"=dword:00000004
+
+#~ Sensor Data Service
+#~ Delivers data from a variety of sensors 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SensorDataService]
+"Start"=dword:00000004
+
+#~ Sensor Monitoring Service
+#~ Monitors various sensors in order to expose data and adapt to system and user state.  If this service is stopped or disabled, the display brightness will not adapt to lighting conditions. Stopping this service may affect other system functionality and features as well. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SensrSvc]
+"Start"=dword:00000004
+
+#~ Sensor Service
+#~ A service for sensors that manages different sensors' functionality. Manages Simple Device Orientation (SDO) and History for sensors. Loads the SDO sensor that reports device orientation changes.  If this service is stopped or disabled, the SDO sensor will not be loaded and so auto-rotation will not occur. History collection from Sensors will also be stopped. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SensorService]
+"Start"=dword:00000004
+
+#~ Smart Card
+#~ Manages access to smart cards read by this computer. If this service is stopped, this computer will be unable to read smart cards. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SCardSvr]
+"Start"=dword:00000004
+
+#~ Smart Card Device Enumeration Service
+#~ Creates software device nodes for all smart card readers accessible to a given session. If this service is disabled, WinRT APIs will not be able to enumerate smart card readers. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ScDeviceEnum]
+"Start"=dword:00000004
+
+#~ Smart Card Removal Policy
+#~ Allows the system to be configured to lock the user desktop upon smart card removal. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SCPolicySvc]
+"Start"=dword:00000004
+
+#~ SNMP Trap
+#~ Receives trap messages generated by local or remote Simple Network Management Protocol (SNMP) agents and forwards the messages to SNMP management programs running on this computer. If this service is stopped, SNMP-based programs on this computer will not receive SNMP trap messages. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SNMPTRAP]
+"Start"=dword:00000004
+
+#~ User Experience Virtualization Service
+#~ Provides support for application and OS settings roaming 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UevAgentService]
+"Start"=dword:00000004
+
+#~ WebClient
+#~ Enables Windows-based programs to create, access, and modify Internet-based files. If this service is stopped, these functions will not be available. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient]
+"Start"=dword:00000003
+
+#~ Windows Camera Frame Server
+#~ Enables multiple clients to access video frames from camera devices. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FrameServer]
+"Start"=dword:00000004
+
+#~ Windows Connect Now - Config Registrar
+#~ WCNCSVC hosts the Windows Connect Now Configuration which is Microsoft's Implementation of Wireless Protected Setup (WPS) protocol. This is used to configure Wireless LAN settings for an Access Point (AP) or a Wireless Device. The service is started programmatically as needed. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wcncsvc]
+"Start"=dword:00000003
+
+#~ Windows Insider Service
+#~ Provides infrastructure support for the Windows Insider Program. This service must remain enabled for the Windows Insider Program to work. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wisvc]
+"Start"=dword:00000004
+
+#~ Windows Media Player Network Sharing Service
+#~ Shares Windows Media Player libraries to other networked players and media devices using Universal Plug and Play 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc]
+"Start"=dword:00000004
+
+#~ Windows Mobile Hotspot Service
+#~ Provides the ability to share a cellular data connection with another device. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\icssvc]
+#~ "Start"=dword:00000004
+
+#~ WLAN AutoConfig
+#~ The WLANSVC service provides the logic required to configure, discover, connect to, and disconnect from a wireless local area network (WLAN) as defined by IEEE 802.11 standards. It also contains the logic to turn your computer into a software access point so that other devices or computers can connect to your computer wirelessly using a WLAN adapter that can support this. Stopping or disabling the WLANSVC service will make all WLAN adapters on your computer inaccessible from the Windows networking UI. It is strongly recommended that you have the WLANSVC service running if your computer has a WLAN adapter. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WlanSvc]
+#~ "Start"=dword:00000003
+
+#~ Windows Remote Management (WS-Management)
+#~ Windows Remote Management (WinRM) service implements the WS-Management protocol for remote management. WS-Management is a standard web services protocol used for remote software and hardware management. The WinRM service listens on the network for WS-Management requests and processes them. The WinRM Service needs to be configured with a listener using winrm.cmd command line tool or through Group Policy in order for it to listen over the network. The WinRM service provides access to WMI data and enables event collection. Event collection and subscription to events require that the service is running. WinRM messages use HTTP and HTTPS as transports. The WinRM service does not depend on IIS but is preconfigured to share a port with IIS on the same machine.  The WinRM service reserves the /wsman URL prefix. To prevent conflicts with IIS, administrators should ensure that any websites hosted on IIS do not use the /wsman URL prefix. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinRM]
+"Start"=dword:00000004
+
+#~ Work Folders
+#~ This service syncs files with the Work Folders server, enabling you to use the files on any of the PCs and devices on which you've set up Work Folders. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\workfolderssvc]
+"Start"=dword:00000004
+
+#~ WWAN AutoConfig
+#~ This service manages mobile broadband (GSM & CDMA) data card/embedded module adapters and connections by auto-configuring the networks. It is strongly recommended that this service be kept running for best user experience of mobile broadband devices. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WwanSvc]
+"Start"=dword:00000004
+
+#~ Xbox Live Auth Manager
+#~ Provides authentication and authorization services for interacting with Xbox Live. If this service is stopped, some applications may not operate correctly. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblAuthManager]
+"Start"=dword:00000004
+
+#~ Xbox Live Game Save
+#~ This service syncs save data for Xbox Live save enabled games.  If this service is stopped, game save data will not upload to or download from Xbox Live. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblGameSave]
+"Start"=dword:00000004
+
+#~ Xbox Live Networking Service
+#~ This service supports the Windows.Networking.XboxLive application programming interface. 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc]
+"Start"=dword:00000004
+
+
