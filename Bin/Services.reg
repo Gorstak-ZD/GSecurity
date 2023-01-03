@@ -1,0 +1,478 @@
+Windows Registry Editor Version 5.00
+
+#~ ActiveX Installer (AxInstSV)
+#~ Provides User Account Control validation for the installation of ActiveX controls from the Internet and enables management of ActiveX control installation based on Group Policy settings. This service is started on demand and if disabled the installation of ActiveX controls will behave according to default browser settings. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\AxInstSV]
+"Start"=dword:00000003
+
+#~ AllJoyn Router Service
+#~ Routes AllJoyn messages for the local AllJoyn clients. If this service is stopped the AllJoyn clients that do not have their own bundled routers will be unable to run. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\AJRouter]
+"Start"=dword:00000003
+
+#~ App Readiness
+#~ Gets apps ready for use the first time a user signs in to this PC and when adding new apps. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\AppReadiness]
+"Start"=dword:00000003
+
+#~ Application Identity
+#~ Determines and verifies the identity of an application. Disabling this service will prevent AppLocker from being enforced. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\AppIDSvc]
+"Start"=dword:00000003
+
+#~ Application Layer Gateway Service
+#~ Provides support for 3rd party protocol plug-ins for Internet Connection Sharing 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ALG]
+"Start"=dword:00000003
+
+#~ Upravljanje aplikacijama
+#~ Zahtjevi za procesima instalacije, uklanjanja i identifikacije softvera implementirani su prema pravilniku grupe. Ako je servis onemoguæen, korisnici neæe moæi instalirati, uklanjati ili identificirati softver uveden na temelju pravilnika grupe. Ako je servis onemoguæen, nijedan servis koji eksplicitno ovisi o njemu neæe se pokrenuti. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\AppMgmt]
+"Start"=dword:00000003
+
+#~ AVCTP service
+#~ This is Audio Video Control Transport Protocol service 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BthAvctpSvc]
+"Start"=dword:00000003
+
+#~ BitLocker Drive Encryption Service
+#~ BDESVC hosts the BitLocker Drive Encryption service. BitLocker Drive Encryption provides secure startup for the operating system, as well as full volume encryption for OS, fixed or removable volumes. This service allows BitLocker to prompt users for various actions related to their volumes when mounted, and unlocks volumes automatically without user interaction. Additionally, it stores recovery information to Active Directory, if available, and, if necessary, ensures the most recent recovery certificates are used.  Stopping or disabling the service would prevent users from leveraging this functionality. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BDESVC]
+"Start"=dword:00000003
+
+#~ Block Level Backup Engine Service
+#~ The WBENGINE service is used by Windows Backup to perform backup and recovery operations. If this service is stopped by a user, it may cause the currently running backup or recovery operation to fail. Disabling this service may disable backup and recovery operations using Windows Backup on this computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wbengine]
+"Start"=dword:00000003
+
+#~ Bluetooth Audio Gateway Service
+#~ Service supporting the audio gateway role of the Bluetooth Handsfree Profile. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BTAGService]
+"Start"=dword:00000003
+
+#~ Bluetooth Support Service
+#~ The Bluetooth service supports discovery and association of remote Bluetooth devices.  Stopping or disabling this service may cause already installed Bluetooth devices to fail to operate properly and prevent new devices from being discovered or associated. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\bthserv]
+#~ "Start"=dword:00000003
+
+#~ Usluga podrške za korisnike Bluetootha
+#~ Usluga za korisnike Bluetootha podržava odgovarajuæe funkcije znaèajki Bluetootha koje su važne za pojedinaène korisnièke sesije. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BluetoothUserService]
+"Start"=dword:00000003
+
+#~ BranchCache
+#~ This service caches network content from peers on the local subnet. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PeerDistSvc]
+"Start"=dword:00000003
+
+#~ Capability Access Manager Service
+#~ Provides facilities for managing UWP apps access to app capabilities as well as checking an app's access to specific app capabilities 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\camsvc]
+"Start"=dword:00000003
+
+#~ Raspaèavanje certifikata
+#~ Kopira certifikate i korijenske certifikate s pametnih kartica u spremište certifikata trenutnog korisnika, prepoznaje kada se pametna kartica umetne u èitaè pametnih kartica i po potrebi instalira mini upravljaèki program vrste "ukljuèi i radi" za pametnu karticu. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CertPropSvc]
+"Start"=dword:00000003
+
+#~ Servis klijentske licence (ClipSVC)
+#~ Pruža podršku za infrastrukturu za trgovinu Microsoft Store. Ovaj je servis pokrenut na zahtjev i ako se onemoguæi, aplikacije koje ste kupili pomoæu Windows trgovine neæe se ispravno ponašati. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ClipSVC]
+"Start"=dword:00000003
+
+#~ CNG Key Isolation
+#~ The CNG key isolation service is hosted in the LSA process. The service provides key process isolation to private keys and associated cryptographic operations as required by the Common Criteria. The service stores and uses long-lived keys in a secure process complying with Common Criteria requirements. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\KeyIso]
+#~ "Start"=dword:00000003
+
+#~ COM+ System Application
+#~ Manages the configuration and tracking of Component Object Model (COM)+-based components. If the service is stopped, most COM+-based components will not function properly. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\COMSysApp]
+"Start"=dword:00000003
+
+#~ Podaci za kontakt
+#~ Indeksira podatke za kontakt radi brzog pretraživanja kontakata. Ako zaustavite ili onemoguæite taj servis, u rezultatima pretraživanja možda se neæe prikazivati svi kontakti. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PimIndexMaintenanceSvc]
+"Start"=dword:00000003
+
+#~ Upravitelj vjerodajnica
+#~ Pruža sigurnu pohranu i dohvaæanje vjerodajnica za korisnike, aplikacije i pakete sigurnosnih servisa. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\VaultSvc]
+"Start"=dword:00000003
+
+#~ Data Sharing Service
+#~ Provides data brokering between applications. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DsSvc]
+"Start"=dword:00000003
+
+#~ Device Association Service
+#~ Enables pairing between the system and wired or wireless devices. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DeviceAssociationService]
+"Start"=dword:00000003
+
+#~ Device Install Service
+#~ Enables a computer to recognize and adapt to hardware changes with little or no user input. Stopping or disabling this service will result in system instability. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DeviceInstall]
+"Start"=dword:00000003
+
+#~ Device Management Enrollment Service
+#~ Performs Device Enrollment Activities for Device Management 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DmEnrollmentSvc]
+"Start"=dword:00000003
+
+#~ Device Setup Manager
+#~ Enables the detection, download and installation of device-related software. If this service is disabled, devices may be configured with outdated software, and may not work correctly. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DsmSVC]
+"Start"=dword:00000003
+
+#~ DevicePicker
+#~ Ova se korisnièka usluga upotrebljava za upravljanje korisnièkim suèeljem Miracast, DLNA i DIAL 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DevicePickerUserSvc]
+"Start"=dword:00000003
+
+#~ DevicesFlow
+#~ Omoguæuje znaèajci ConnectUX i postavkama PC-ja povezivanje i uparivanje sa zaslonima WiFi-ja i Bluetooth ureðajima. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DevicesFlowUserSvc]
+"Start"=dword:00000003
+
+#~ DevQuery Background Discovery Broker
+#~ Enables apps to discover devices with a backgroud task 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DevQueryBroker]
+"Start"=dword:00000003
+
+#~ Diagnostic Execution Service
+#~ Executes diagnostic actions for troubleshooting support 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\diagsvc]
+"Start"=dword:00000003
+
+#~ Diagnostic Service Host
+#~ The Diagnostic Service Host is used by the Diagnostic Policy Service to host diagnostics that need to run in a Local Service context.  If this service is stopped, any diagnostics that depend on it will no longer function. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdiServiceHost]
+"Start"=dword:00000003
+
+#~ Diagnostic System Host
+#~ The Diagnostic System Host is used by the Diagnostic Policy Service to host diagnostics that need to run in a Local System context.  If this service is stopped, any diagnostics that depend on it will no longer function. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WdiSystemHost]
+"Start"=dword:00000003
+
+#~ Distributed Transaction Coordinator
+#~ Coordinates transactions that span multiple resource managers, such as databases, message queues, and file systems. If this service is stopped, these transactions will fail. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSDTC]
+"Start"=dword:00000003
+
+#~ Upravitelj preuzetih karata
+#~ Servis sustava Windows koji aplikacijama omoguæuje pristup preuzetim kartama. Servis na zahtjev pokreæe aplikacija koja pristupa preuzetim kartama. Ako onemoguæite servis, aplikacije neæe moæi pristupati kartama. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MapsBroker]
+"Start"=dword:00000002
+
+#~ Embedded Mode
+#~ The Embedded Mode service enables scenarios related to Background Applications.  Disabling this service will prevent Background Applications from being activated. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\embeddedmode]
+"Start"=dword:00000003
+
+#~ Encrypting File System (EFS)
+#~ Provides the core file encryption technology used to store encrypted files on NTFS file system volumes. If this service is stopped or disabled, applications will be unable to access encrypted files. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EFS]
+"Start"=dword:00000003
+
+#~ Enterprise App Management Service
+#~ Enables enterprise application management. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EntAppSvc]
+"Start"=dword:00000003
+
+#~ Extensible Authentication Protocol
+#~ The Extensible Authentication Protocol (EAP) service provides network authentication in such scenarios as 802.1x wired and wireless, VPN, and Network Access Protection (NAP).  EAP also provides application programming interfaces (APIs) that are used by network access clients, including wireless and VPN clients, during the authentication process.  If you disable this service, this computer is prevented from accessing networks that require EAP authentication. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\EapHost]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Fax]
+"Start"=dword:00000003
+
+#~ File History Service
+#~ Protects user files from accidental loss by copying them to a backup location 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\fhsvc]
+"Start"=dword:00000003
+
+#~ Function Discovery Provider Host
+#~ The FDPHOST service hosts the Function Discovery (FD) network discovery providers. These FD providers supply network discovery services for the Simple Services Discovery Protocol (SSDP) and Web Services – Discovery (WS-D) protocol. Stopping or disabling the FDPHOST service will disable network discovery for these protocols when using FD. When this service is unavailable, network services using FD and relying on these discovery protocols will be unable to find network devices or resources. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\fdPHost]
+"Start"=dword:00000003
+
+#~ Function Discovery Resource Publication
+#~ Publishes this computer and resources attached to this computer so they can be discovered over the network.  If this service is stopped, network resources will no longer be published and they will not be discovered by other computers on the network. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\FDResPub]
+"Start"=dword:00000003
+
+#~ GameDVR and Broadcast User Service
+#~ This user service is used for Game Recordings and Live Broadcasts 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\BcastDVRUserService]
+"Start"=dword:00000003
+
+#~ Geolocation Service
+#~ This service monitors the current location of the system and manages geofences (a geographical location with associated events).  If you turn off this service, applications will be unable to use or receive notifications for geolocation or geofences. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lfsvc]
+"Start"=dword:00000003
+
+#~ GraphicsPerfSvc
+#~ Graphics performance monitor service 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\GraphicsPerfSvc]
+"Start"=dword:00000003
+
+#~ HV Host Service
+#~ Provides an interface for the Hyper-V hypervisor to provide per-partition performance counters to the host operating system. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HvHost]
+"Start"=dword:00000003
+
+#~ Hyper-V Data Exchange Service
+#~ Provides a mechanism to exchange data between the virtual machine and the operating system running on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmickvpexchange]
+"Start"=dword:00000003
+
+#~ Hyper-V Guest Service Interface
+#~ Provides an interface for the Hyper-V host to interact with specific services running inside the virtual machine. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicguestinterface]
+"Start"=dword:00000003
+
+#~ Hyper-V Guest Shutdown Service
+#~ Provides a mechanism to shut down the operating system of this virtual machine from the management interfaces on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicshutdown]
+"Start"=dword:00000003
+
+#~ Hyper-V Heartbeat Service
+#~ Monitors the state of this virtual machine by reporting a heartbeat at regular intervals. This service helps you identify running virtual machines that have stopped responding. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicheartbeat]
+"Start"=dword:00000003
+
+#~ Hyper-V PowerShell Direct Service
+#~ Provides a mechanism to manage virtual machine with PowerShell via VM session without a virtual network. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicvmsession]
+"Start"=dword:00000003
+
+#~ Hyper-V Remote Desktop Virtualization Service
+#~ Provides a platform for communication between the virtual machine and the operating system running on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicrdv]
+"Start"=dword:00000003
+
+#~ Hyper-V Time Synchronization Service
+#~ Synchronizes the system time of this virtual machine with the system time of the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmictimesync]
+"Start"=dword:00000003
+
+#~ Hyper-V Volume Shadow Copy Requestor
+#~ Coordinates the communications that are required to use Volume Shadow Copy Service to back up applications and data on this virtual machine from the operating system on the physical computer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicvss]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\irmon]
+"Start"=dword:00000003
+
+#~ Internet Connection Sharing (ICS)
+#~ Provides network address translation, addressing, name resolution and/or intrusion prevention services for a home or small office network. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess]
+"Start"=dword:00000003
+
+#~ IP Helper
+#~ Provides tunnel connectivity using IPv6 transition technologies (6to4, ISATAP, Port Proxy, and Teredo), and IP-HTTPS. If this service is stopped, the computer will not have the enhanced connectivity benefits that these technologies offer. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\iphlpsvc]
+"Start"=dword:00000002
+
+#~ IP Translation Configuration Service
+#~ Configures and enables translation from v4 to v6 and vice versa 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\IpxlatCfgSvc]
+"Start"=dword:00000003
+
+#~ Microsoft App-V Client
+#~ Manages App-V users and virtual applications 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\AppVClient]
+"Start"=dword:00000004
+
+#~ Microsoft iSCSI Initiator Service
+#~ Manages Internet SCSI (iSCSI) sessions from this computer to remote iSCSI target devices. If this service is stopped, this computer will not be able to login or access iSCSI targets. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MSiSCSI]
+"Start"=dword:00000003
+
+#~ Microsoft Windows SMS Router Service.
+#~ Routes messages based on rules to appropriate clients. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SmsRouter]
+"Start"=dword:00000003
+
+#~ Natural Authentication
+#~ Signal aggregator service, that evaluates signals based on time, network, geolocation, bluetooth and cdf factors. Supported features are Device Unlock, Dynamic Lock and Dynamo MDM policies 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NaturalAuthentication]
+"Start"=dword:00000003
+
+#~ Net.Tcp Port Sharing Service
+#~ Provides ability to share TCP ports over the net.tcp protocol. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NetTcpPortSharing]
+"Start"=dword:00000004
+
+#~ Netlogon
+#~ Maintains a secure channel between this computer and the domain controller for authenticating users and services. If this service is stopped, the computer may not authenticate users and services and the domain controller cannot register DNS records. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon]
+"Start"=dword:00000003
+
+#~ Network Connected Devices Auto-Setup
+#~ Network Connected Devices Auto-Setup service monitors and installs qualified devices that connect to a qualified network. Stopping or disabling this service will prevent Windows from discovering and installing qualified network connected devices automatically. Users can still manually add network connected devices to a PC through the user interface. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NcdAutoSetup]
+"Start"=dword:00000003
+
+#~ Offline Files
+#~ The Offline Files service performs maintenance activities on the Offline Files cache, responds to user logon and logoff events, implements the internals of the public API, and dispatches interesting events to those interested in Offline Files activities and changes in cache state. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CscService]
+"Start"=dword:00000003
+
+#~ Roditeljski nadzor
+#~ Nameæe roditeljski nadzor za raèune za djecu u sustavu Windows. Ako se taj servis prekine ili onemoguæi, roditeljski nadzor možda se neæe provesti. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WpcMonSvc]
+"Start"=dword:00000003
+
+#~ Payments and NFC/SE Manager
+#~ Manages payments and Near Field Communication (NFC) based secure elements. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SEMgrSvc]
+"Start"=dword:00000003
+
+#~ Telefonska usluga
+#~ Upravlja stanjem telefonije na ureðaju 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PhoneSvc]
+"Start"=dword:00000003
+
+#~ Remote Desktop Configuration
+#~ Remote Desktop Configuration service (RDCS) is responsible for all Remote Desktop Services and Remote Desktop related configuration and session maintenance activities that require SYSTEM context. These include per-session temporary folders, RD themes, and RD certificates. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SessionEnv]
+"Start"=dword:00000003
+
+#~ Remote Desktop Services
+#~ Allows users to connect interactively to a remote computer. Remote Desktop and Remote Desktop Session Host Server depend on this service.  To prevent remote use of this computer, clear the checkboxes on the Remote tab of the System properties control panel item. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\TermService]
+"Start"=dword:00000003
+
+#~ Preusmjerivaè prikljuèka u korisnièkom naèinu rada za servise udaljene radne površine
+#~ Dopušta preusmjeravanje pisaèa/pogona/prikljuèaka za RDP veze 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UmRdpService]
+"Start"=dword:00000003
+
+#~ Remote Procedure Call (RPC) Locator
+#~ In Windows 2003 and earlier versions of Windows, the Remote Procedure Call (RPC) Locator service manages the RPC name service database. In Windows Vista and later versions of Windows, this service does not provide any functionality and is present for application compatibility. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RpcLocator]
+"Start"=dword:00000003
+
+#~ Remote Registry
+#~ Enables remote users to modify registry settings on this computer. If this service is stopped, the registry can be modified only by users on this computer. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteRegistry]
+"Start"=dword:00000004
+
+#~ Retail Demo Service
+#~ The Retail Demo service controls device activity while the device is in retail demo mode. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RetailDemo]
+"Start"=dword:00000003
+
+#~ Routing and Remote Access
+#~ Offers routing services to businesses in local area and wide area network environments. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess]
+"Start"=dword:00000004
+
+#~ Sensor Data Service
+#~ Delivers data from a variety of sensors 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SensorDataService]
+"Start"=dword:00000003
+
+#~ Sensor Monitoring Service
+#~ Monitors various sensors in order to expose data and adapt to system and user state.  If this service is stopped or disabled, the display brightness will not adapt to lighting conditions. Stopping this service may affect other system functionality and features as well. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SensrSvc]
+"Start"=dword:00000003
+
+#~ Sensor Service
+#~ A service for sensors that manages different sensors' functionality. Manages Simple Device Orientation (SDO) and History for sensors. Loads the SDO sensor that reports device orientation changes.  If this service is stopped or disabled, the SDO sensor will not be loaded and so auto-rotation will not occur. History collection from Sensors will also be stopped. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SensorService]
+"Start"=dword:00000003
+
+#~ Pametna kartica
+#~ Upravlja pristupom èitanju pametnih kartica na ovom raèunalu. Ako se ova usluga zaustavi, raèunalo neæe moæi èitati pametne kartice. Ako je usluga onemoguæena, nijedna usluga koja izrièito ovisi o njoj neæe se moæi pokrenuti. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SCardSvr]
+"Start"=dword:00000003
+
+#~ Smart Card Device Enumeration Service
+#~ Creates software device nodes for all smart card readers accessible to a given session. If this service is disabled, WinRT APIs will not be able to enumerate smart card readers. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\ScDeviceEnum]
+"Start"=dword:00000003
+
+#~ Pravila uklanjanja pametne kartice
+#~ Dopušta sustavu konfiguriranje koje nakon uklanjanja pametne kartice zakljuèava korisnièku radnu površinu. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SCPolicySvc]
+"Start"=dword:00000003
+
+#~ SNMP trap
+#~ Prima trap poruke koje generiraju lokalni ili udaljeni agenti protokola Simple Network Management Protocol (SNMP) i prosljeðuje poruke programima za upravljanje SNMP-om pokrenutima na ovom raèunalu. Ako se ovaj servis zaustavi, programi na ovom raèunalu koji se temelje na SNMP-u neæe primati SNMP trap poruke. Ako je ovaj servis onemoguæen, neæe se uspjeti pokrenuti nijedan servis koji izrièito ovisi o njemu. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SNMPTRAP]
+"Start"=dword:00000003
+
+#~ User Experience Virtualization Service
+#~ Provides support for application and OS settings roaming 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UevAgentService]
+"Start"=dword:00000004
+
+#~ WebClient
+#~ Enables Windows-based programs to create, access, and modify Internet-based files. If this service is stopped, these functions will not be available. If this service is disabled, any services that explicitly depend on it will fail to start. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WebClient]
+"Start"=dword:00000003
+
+#~ Windows Camera Frame Server
+#~ Enables multiple clients to access video frames from camera devices. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\FrameServer]
+"Start"=dword:00000003
+
+#~ Windows Connect Now – registrator Config
+#~ WCNCSVC udomljuje Windows Connect Now Configuration, Microsoftovu implementaciju protokola Wireless Protected Setup (WPS). Windows Connect Now Configuration koristi se za konfiguriranje postavki bežiènog LAN-a za pristupnu toèku (AP) ili bežièni ureðaj. Servis se po potrebi programski pokreæe. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wcncsvc]
+"Start"=dword:00000003
+
+#~ Usluga Windows Insider
+#~ Pruža infrastrukturnu podršku za program Windows Insider. Ova usluga mora ostati omoguæena da bi program Windows Insider ispravno funkcionirao. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wisvc]
+"Start"=dword:00000003
+
+#~ Servis za zajednièko mrežno korištenje sadržaja za Windows Media Player
+#~ Omoguæuje zajednièko korištenje biblioteka programa Windows Media Player s drugim umreženim ureðajima za reprodukciju i medijskim ureðajima koji koriste univerzalni Ukljuèi i radi 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WMPNetworkSvc]
+"Start"=dword:00000003
+
+#~ Servis mobilne pristupne toèke u sustavu Windows
+#~ Pruža moguænost dijeljenja mobilne podatkovne veze s nekim drugim ureðajem. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\icssvc]
+#~ "Start"=dword:00000003
+
+#~ Samokonfiguriranje WLAN-a
+#~ Servis WLANSVC osigurava logiku potrebnu za konfiguriranje bežiène lokalne mreže (WLAN-a), njezino otkrivanje, povezivanje s njom i prekidanje veze s njom na naèin definiran IEEE 802.11 standardima. Taj servis sadrži i logiku za pretvorbu vašeg raèunala u softversku pristupnu toèku da bi se drugi ureðaji ili raèunala mogli bežièno povezivati s njim pomožu WLAN kartice koja to podržava. Prekidanje ili onemoguæavanje servisa WLANSVC uèinit æe sve WLAN kartice u raèunalu nedostupnima iz korisnièkog suèelja za umrežavanje sustava Windows. Preporuèljivo je pokrenuti servis WLANSVC ako raèunalo koristi WLAN karticu. 
+#~ [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WlanSvc]
+#~ "Start"=dword:00000002
+
+#~ Windows Remote Management (WS-Management)
+#~ Windows Remote Management (WinRM) service implements the WS-Management protocol for remote management. WS-Management is a standard web services protocol used for remote software and hardware management. The WinRM service listens on the network for WS-Management requests and processes them. The WinRM Service needs to be configured with a listener using winrm.cmd command line tool or through Group Policy in order for it to listen over the network. The WinRM service provides access to WMI data and enables event collection. Event collection and subscription to events require that the service is running. WinRM messages use HTTP and HTTPS as transports. The WinRM service does not depend on IIS but is preconfigured to share a port with IIS on the same machine.  The WinRM service reserves the /wsman URL prefix. To prevent conflicts with IIS, administrators should ensure that any websites hosted on IIS do not use the /wsman URL prefix. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WinRM]
+"Start"=dword:00000003
+
+#~ Work Folders
+#~ This service syncs files with the Work Folders server, enabling you to use the files on any of the PCs and devices on which you've set up Work Folders. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\workfolderssvc]
+"Start"=dword:00000003
+
+#~ WWAN AutoConfig
+#~ This service manages mobile broadband (GSM & CDMA) data card/embedded module adapters and connections by auto-configuring the networks. It is strongly recommended that this service be kept running for best user experience of mobile broadband devices. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\WwanSvc]
+"Start"=dword:00000003
+
+#~ Upravljanje provjerom autorizacije za Xbox Live
+#~ Pruža usluge provjere autentiènosti i autorizacije za interakciju sa servisom Xbox Live. Ako se servis zaustavi, neke aplikacije možda neæe ispravno funkcionirati. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XblAuthManager]
+"Start"=dword:00000003
+
+#~ Spremljena igra sa servisa Xbox Live
+#~ Ovaj servis sinkronizira podatke o spremljenim igrama za igre za koje je omoguæeno spremanje na servis Xbox Live. Ako se servis zaustavi, podaci o spremljenim igrama neæe se moæi prenositi na servis Xbox Live ni preuzimati s njega. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XblGameSave]
+"Start"=dword:00000003
+
+#~ Mrežni servis Xbox Live
+#~ Servis podržava suèelje za programiranje aplikacija Windows.Networking.XboxLive. 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\XboxNetApiSvc]
+"Start"=dword:00000003
+
