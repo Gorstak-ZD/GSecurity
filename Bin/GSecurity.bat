@@ -22,6 +22,7 @@ Reg.exe import Certs.reg
 Reg.exe import Firewall.reg
 Reg.exe import Immunity.reg
 Reg.exe import Privacy.reg
+Reg.exe import Proxy.reg
 Reg.exe import Routes.reg
 Reg.exe import Safer.reg
 Reg.exe import Services.reg
