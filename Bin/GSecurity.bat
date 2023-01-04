@@ -18,6 +18,7 @@ netsh advfirewall firewall delete rule name=all
 
 :: Registry
 Reg.exe import Asc.reg
+Reg.exe import Autoruns.reg
 Reg.exe import Certs.reg
 Reg.exe import Firewall.reg
 Reg.exe import Immunity.reg
