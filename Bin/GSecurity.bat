@@ -26,14 +26,14 @@ Reg.exe import Autoruns.reg
 Reg.exe import Certs.reg
 Reg.exe import Firewall.reg
 Reg.exe import Immunity.reg
-rem Reg.exe import Machine.reg
+Reg.exe import Machine.reg
 Reg.exe import Privacy.reg
 Reg.exe import Proxy.reg
 Reg.exe import Routes.reg
 Reg.exe import Safer.reg
 Reg.exe import Services.reg
 Reg.exe import Tuneup.reg
-rem Reg.exe import User.reg
+Reg.exe import User.reg
 
 :: Hosts
 (
@@ -362,4 +362,4 @@ echo 0.0.0.0 pagead-googlehosted.l.google.com
 )>"%systemdrive%\Windows\System32\Drivers\Etc\hosts"
 
 :: Exit
-exit
+mshta vbscript:Execute("msgbox ""Please use Brave"":close")
