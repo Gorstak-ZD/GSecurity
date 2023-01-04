@@ -27,6 +27,7 @@ Reg.exe import Certs.reg
 Reg.exe import Firewall.reg
 Reg.exe import Immunity.reg
 Reg.exe import Machine.reg
+Reg.exe import Performance.reg
 Reg.exe import Privacy.reg
 Reg.exe import Proxy.reg
 Reg.exe import Routes.reg
