@@ -683,7 +683,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\LanmanServer]
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\LanmanServer\Parameters]
-"AutoShareServer"=dword:00000001
+"AutoShareServer"=dword:00000000
 "AutoShareWks"=dword:00000000
 "Hidden"=dword:00000001
 "SizReqBuf"=dword:00004000
