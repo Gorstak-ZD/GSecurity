@@ -13,6 +13,11 @@ Windows Registry Editor Version 5.00
 "SmoothScroll"=dword:00000000
 "WaitToKillAppTimeout"="1000"
 
+[HKEY_CURRENT_USER\Control Panel\International]
+
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
 [HKEY_CURRENT_USER\Control Panel\Keyboard]
 "InitialKeyboardIndicators"="2147483650"
 
@@ -80,6 +85,37 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows]
 
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion]
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer]
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage]
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe]
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge]
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\FlipAhead]
+"FPEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main]
+"DoNotTrack"=dword:00000001
+"OptimizeWindowsSearchResultsForScreenReaders"=dword:00000000
+"ShowSearchSuggestionsGlobal"=dword:00000000
+"Use FormSuggest"="no"
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Privacy]
+"EnableEncryptedMediaExtensions"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI]
+"EnableCortana"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI\ShowSearchHistory]
+@=dword:00000000
+
 [HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell]
 
 [HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags]
@@ -138,10 +174,42 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft]
 
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Input]
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
 [HKEY_CURRENT_USER\Software\Microsoft\Siuf]
 
 [HKEY_CURRENT_USER\Software\Microsoft\Siuf\Rules]
 "NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps]
+"AgentActivationEnabled"=dword:00000000
+"AgentActivationLastUsed"=dword:00000000
+"AgentActivationOnLockScreenEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\TabletTip]
+
+[HKEY_CURRENT_USER\Software\Microsoft\TabletTip\1.7]
+"EnableTextPrediction"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows]
 
@@ -153,13 +221,80 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AppHost]
 "EnableWebContentEvaluation"=dword:00000001
 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUserDisabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\activity]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\cellularData]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
+"Value"="Deny"
+
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "RotatingLockScreenEnabled"=dword:00000000
 "RotatingLockScreenOverlayEnabled"=dword:00000000
+"SilentInstalledAppsEnabled"=dword:00000000
 "SoftLandingEnabled"=dword:00000000
 "SubscribedContent-310093Enabled"=dword:00000000
 "SubscribedContent-314563Enabled"=dword:00000000
 "SubscribedContent-338387Enabled"=dword:00000000
+"SubscribedContent-338388Enabled"=dword:00000000
+"SubscribedContent-338389Enabled"=dword:00000000
+"SubscribedContent-338393Enabled"=dword:00000000
+"SubscribedContent-353694Enabled"=dword:00000000
+"SubscribedContent-353696Enabled"=dword:00000000
 "SubscribedContent-353698Enabled"=dword:00000000
 "SystemPaneSuggestionsEnabled"=dword:00000000
 
@@ -188,8 +323,14 @@ Windows Registry Editor Version 5.00
 "DontUsePowerShellOnWinX"=dword:00000001
 "ExtendedUIHoverTime"=dword:00000190
 "ShowSecondsInSystemClock"=dword:00000001
+"ShowSyncProviderNotifications"=dword:00000000
+"Start_TrackDocs"=dword:00000000
+"Start_TrackProgs"=dword:00000000
 "TaskbarGlomLevel"=dword:00000000
 "TaskbarSmallIcons"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+"PeopleBand"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete]
 "Append Completion"="yes"
@@ -206,18 +347,30 @@ Windows Registry Editor Version 5.00
 "RightMarginPx"=dword:00000010
 "TopMarginPx"=dword:00000010
 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Feeds]
+"ShellFeedsTaskbarViewMode"=dword:00000002
+
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lock Screen]
 "SlideshowDuration"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies]
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "HideClock"=dword:00000000
+"HideSCAMeetNow"=dword:00000001
 "HideSCANetwork"=dword:00000000
 "HideSCAVolume"=dword:00000000
 "NoLowDiskSpaceChecks"=dword:00000000
 "NoPreviewPane"=dword:00000000
 "NoTrayItemsDisplay"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
 "ToastEnabled"=dword:00000000
@@ -226,15 +379,42 @@ Windows Registry Editor Version 5.00
 "AllowSearchToUseLocation"=dword:00000000
 "BingSearchEnabled"=dword:00000000
 "CortanaConsent"=dword:00000000
+"SearchboxTaskbarMode"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync]
 "SyncPolicy"=dword:00000005
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Language]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
+"Enabled"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes]
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "AppsUseLightTheme"=dword:00000000
 "SystemUsesLightTheme"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Windows Search]
+"CortanaConsent"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting]
 "Disabled"=dword:00000001
@@ -358,6 +538,32 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft]
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OneDrive]
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PCHC]
+"PreviousUninstall"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Bluetooth]
+"AllowAdvertising"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Browser]
+"AllowAddressBarDropdown"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\System]
+"AllowExperimentation"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
+"ModelDownloadAllowed"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager]
@@ -381,11 +587,21 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
 "MaintenanceDisabled"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"SensorPermissionState"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
 "AutoRestartShell"=dword:00000001
 "IgnoreShiftOveride"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets]
 
@@ -401,10 +617,83 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\UserSwitch]
 "Enabled"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\activity]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\cellularData]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\gazeInput]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Deny"
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config]
-"DoDownloadMode"=dword:00000000
+"DODownloadMode"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
 
@@ -414,7 +703,11 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies]
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"AllowTelemetry"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"HideSCAMeetNow"=dword:00000001
 "NoChangeStartMenu"=dword:00000000
 "NoRecentDocsNetHood"=dword:00000001
 
@@ -434,8 +727,23 @@ Windows Registry Editor Version 5.00
 "dontdisplaylastusername"=dword:00000001
 "shutdownwithoutlogon"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
 "SecurityHealth"=hex(2):25,00,77,00,69,00,6e,00,64,00,69,00,72,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,53,00,65,00,63,00,75,00,72,00,69,00,74,00,79,00,48,00,65,00,61,00,6c,00,74,00,68,00,53,00,79,00,73,00,74,00,72,00,61,00,79,00,2e,00,65,00,78,00,65,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsStore]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsStore\WindowsUpdate]
+"AutoDownload"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Services]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Services\7971f918-a847-4430-9279-4a52d1efe18d]
+"RegisteredWithAU"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
 "Disabled"=dword:00000001
@@ -447,8 +755,16 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
 "Enabled"=dword:00000000
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"AutofillCreditCardEnabled"=dword:00000000
+"UserFeedbackAllowed"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"AllowInputPersonalization"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
 "DontOfferThroughWUAU"=dword:00000001
+"DontReportInfectionInformation"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge]
 
@@ -458,12 +774,29 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader]
 "AllowTabPreloading"=dword:00000000
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Speech]
+"AllowSpeechModelUpdate"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WMDRM]
+"DisableOnline"=dword:00000001
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine]
 "MpEnablePus"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"SpyNetReporting"=dword:00000000
+"SubmitSamplesConsent"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\CurrentVersion]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform]
+"NoGenTicket"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
 "AllowWindowsInkWorkspace"=dword:00000000
@@ -478,9 +811,34 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "AllowTelemetry"=dword:00000000
+"DisableOneSettingsDownloads"=dword:00000001
+"DoNotShowFeedbackNotifications"=dword:00000001
+"LimitDiagnosticLogCollection"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
 "NoNewAppAlert"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports]
+"PreventHandwritingErrorReports"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocation"=dword:00000001
+"DisableLocationScripting"=dword:00000001
+"DisableSensors"=dword:00000001
+"DisableWindowsLocationProvider"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Maps]
+"AllowUntriggeredNetworkTrafficOnSettingsPage"=dword:00000000
+"AutoDownloadAndUpdateMapData"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreenCamera"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
 "DisableAcrylicBackgroundOnLogon"=dword:00000001
@@ -488,11 +846,25 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TabletPC]
 "PreventHandwritingDataSharing"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds]
+"EnableFeeds"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCloudSearch"=dword:00000000
 "AllowCortana"=dword:00000000
+"AllowCortanaAboveLock"=dword:00000000
+"AllowSearchToUseLocation"=dword:00000000
+"ConnectedSearchUseWeb"=dword:00000000
+"DisableWebSearch"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"DeferUpdatePeriod"=dword:00000000
+"DeferUpgrade"=dword:00000001
+"DeferUpgradePeriod"=dword:00000001
 "ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SYSTEM]
 
@@ -532,7 +904,17 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Memory Management\PrefetchParameters]
 "EnablePrefetcher"=dword:00000000
 
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener]
+"Start"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack]
+"Start"=dword:00000004
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\FDResPub]
 "Start"=dword:00000002
@@ -543,6 +925,13 @@ Windows Registry Editor Version 5.00
 "AutoShareServer"=dword:00000001
 "AutoShareWks"=dword:00000000
 "Hidden"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NlaSvc]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NlaSvc\Parameters]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Spooler]
 "Start"=dword:00000004
@@ -563,4 +952,14 @@ Windows Registry Editor Version 5.00
 "WSearch"=dword:00000004
 
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\dmwappushservice]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lfsvc]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lfsvc\Service]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\lfsvc\Service\Configuration]
+"Status"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wuauserv]
 "Start"=dword:00000004
